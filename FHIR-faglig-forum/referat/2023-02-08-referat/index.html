@@ -1,0 +1,1137 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="HL7 Norway">
+      
+      
+      
+      
+      <link rel="icon" href="../../../images/logo.png">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.12">
+    
+    
+      
+        <title>Møte 16 i FHIR fagforum - HL7 Norway Best Practice</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.85bb2934.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.a6bdf11c.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="red">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#mte-16-i-fhir-fagforum" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="HL7 Norway Best Practice" class="md-header__button md-logo" aria-label="HL7 Norway Best Practice" data-md-component="logo">
+      
+  <img src="../../../images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            HL7 Norway Best Practice
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Møte 16 i FHIR fagforum
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="red"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+            
+              <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+              </label>
+            
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="red"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+            
+              <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+              </label>
+            
+          
+        </form>
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/HL7Norway/best-practice" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    HL7-Norway-Best-Practice
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="HL7 Norway Best Practice" class="md-nav__button md-logo" aria-label="HL7 Norway Best Practice" data-md-component="logo">
+      
+  <img src="../../../images/logo.png" alt="logo">
+
+    </a>
+    HL7 Norway Best Practice
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/HL7Norway/best-practice" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    HL7-Norway-Best-Practice
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.md" class="md-nav__link">
+        Innledning
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../">FHIR fagforum</a>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          FHIR fagforum
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          Høringssvar
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Høringssvar
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../horingsvar/index.md" class="md-nav__link">
+        None
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          no-domain
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          no-domain
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../no-domain-metode/index.md" class="md-nav__link">
+        None
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../dgi/">Den gode implementasjonsguide</a>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Den gode implementasjonsguide
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          Profilering
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Profilering
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../no-profileringsierarki.md" class="md-nav__link">
+        Nasjonalt profileringhierarki
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../no-basis-principles/" class="md-nav__link">
+        Prinsipper for nasjonal profilering
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#nordic-projects" class="md-nav__link">
+    Nordic projects
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#presentasjoner" class="md-nav__link">
+    Presentasjoner
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hl7-norge-yvind-aassve-sykehuspartner" class="md-nav__link">
+    HL7 Norge - Øyvind AAssve, Sykehuspartner
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#finland-finnish-base-profiles" class="md-nav__link">
+    Finland Finnish base profiles
+  </a>
+  
+    <nav class="md-nav" aria-label="Finland Finnish base profiles">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#finnland-fhir-demo" class="md-nav__link">
+    Finnland FHIR demo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#questionscomments" class="md-nav__link">
+    Questions/comments
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#denmark-fut-flles-understttelse-av-telemedicin" class="md-nav__link">
+    Denmark FUT Fælles understøttelse av telemedicin
+  </a>
+  
+    <nav class="md-nav" aria-label="Denmark FUT Fælles understøttelse av telemedicin">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#questionscomments_1" class="md-nav__link">
+    Questions/comments
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#denmark-transisition-from-legacy" class="md-nav__link">
+    Denmark Transisition from legacy
+  </a>
+  
+    <nav class="md-nav" aria-label="Denmark Transisition from legacy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#danish-fhir-core-profiles" class="md-nav__link">
+    Danish FHIR core profiles
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#channel-strategy-communication-paradigm" class="md-nav__link">
+    Channel strategy (communication paradigm)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#questions" class="md-nav__link">
+    Questions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#eventuelt-og-diskusjon" class="md-nav__link">
+    Eventuelt og diskusjon
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#swedish-base-fhir-profiles" class="md-nav__link">
+    Swedish Base FHIR profiles
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#national-swedish-medication-list" class="md-nav__link">
+    National Swedish medication list
+  </a>
+  
+    <nav class="md-nav" aria-label="National Swedish medication list">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#questions_1" class="md-nav__link">
+    Questions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#the-chat-containing-some-important-links-to-documentation" class="md-nav__link">
+    The chat (containing some important links to documentation)
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="mte-16-i-fhir-fagforum">Møte 16 i FHIR fagforum</h1>
+<ul>
+<li>Dato: 2023-02-08</li>
+<li>Klokkeslett: 1300-1500</li>
+<li>81 personer innom møtet</li>
+</ul>
+<p>FHIR fagforum (FFF) er et åpent forum om bruk og implementering av HL7 FHIR i Norge. FFF er åpent for alle.</p>
+<h2 id="nordic-projects">Nordic projects</h2>
+<ul>
+<li>Intro (5 min)</li>
+<li>HL7 Norway info (5 min)</li>
+<li>Mikael Rinnetmäki, Finland (20 min)<ul>
+<li>Nordic IPA, harmonizing the national base profiles of the Nordic countries</li>
+<li>FHIR Demo, experiences from 2022, info on joint effort for 2023</li>
+</ul>
+</li>
+<li>Jens Villadsen, Denmark (30 min)<ul>
+<li>Fælles Udbredelse af Telemedicin (FUT) is a Danish national healthcare platform aimed for telemedicine use that can host 3rd-party apps communicating using HL7 FHIR API</li>
+</ul>
+</li>
+<li>Michael Johanson, Denmark (30 min)<ul>
+<li>Transition from legacy to FHIR. EDIfact and XML, you are FHIR’ed!</li>
+<li>Messaging paradigm partly change for documentsharing and REST-services</li>
+</ul>
+</li>
+<li>Emmeli Gross, Sweden (20 min)<ul>
+<li>Swedish base profiles</li>
+<li>Swedish E-health Agency work on FHIR in the National Swedish Medication List</li>
+</ul>
+</li>
+<li>Discussions (10 min)</li>
+</ul>
+<h2 id="presentasjoner">Presentasjoner</h2>
+<ul>
+<li><a href="../../presentasjon/2023-02-08-FHIR-fagforum-16.pdf">FHIR fagforum intro nr 16</a></li>
+<li><a href="../../presentasjon/FUT-Fagligt-Forum-HL7-FHIR-Norge.pdf">Fælles Udbredelse af Telemedicin</a></li>
+<li><a href="../../presentasjon/2023-02-08-Transition-from-legacy-MedCom.pdf">Transition from legacy to FHIR</a></li>
+<li><a href="../../presentasjon/2023-02-08-Sweden-FHIR-fagforum-%2316-Nordic.pdf">Swedish base profiles</a></li>
+</ul>
+<h2 id="hl7-norge-yvind-aassve-sykehuspartner">HL7 Norge - Øyvind AAssve, Sykehuspartner</h2>
+<p>Different norwegian projects</p>
+<h2 id="finland-finnish-base-profiles">Finland Finnish base profiles</h2>
+<ul>
+<li>Snapshot and SMART implementation guide</li>
+<li>Based on the most common use-cases in the healthcare sector</li>
+<li>Most terminology is from existing codesystems</li>
+<li>Builds on the international IPA specification</li>
+<li>Take a look on the base profiles in other countries adapt what is being done in other countries</li>
+<li>Later this spring harmonization of the nordic base profiles</li>
+</ul>
+<h3 id="finnland-fhir-demo">Finnland FHIR demo</h3>
+<ul>
+<li>Finnish demo site in winish <a href="fhir.fi/en/demo2022">FHIR demo</a></li>
+<li>Integration using FHIR is documented and tested in connectaton</li>
+<li>FHIR first strategy of the larges </li>
+<li>Repeating the FHIR demo HIMSS event in june</li>
+<li>Interested parties </li>
+<li>HUS has a FHIR first strategy</li>
+</ul>
+<h3 id="questionscomments">Questions/comments</h3>
+<ul>
+<li>Base profile use in finland?<ul>
+<li>Not published yet, but the reason for starting the effort is to prevent the way FHIr is implemented in different projects in implementations</li>
+</ul>
+</li>
+<li>Is the government involved in profiling or mandating use of the profiles?<ul>
+<li>Government KELA, THL code setting, Ministry of health (not involved) but the other two are involved</li>
+</ul>
+</li>
+<li>[13:21] Jens Kristian Villadsen do they have to be on the nordic market?[13:21] Jens Kristian Villadsenthe solutions?<ul>
+<li>No they do not</li>
+</ul>
+</li>
+<li>I have a stealth project of interest :-)</li>
+<li>FHIR first strategy working out for HUS<ul>
+<li>EPIC installation using the FHIR integration, most recent </li>
+</ul>
+</li>
+</ul>
+<h2 id="denmark-fut-flles-understttelse-av-telemedicin">Denmark FUT Fælles understøttelse av telemedicin</h2>
+<ul>
+<li>Largest FHIR implementation in Denmark<ul>
+<li>89 municipalities and all four regions are connectted to FUT</li>
+</ul>
+</li>
+<li>Telemedicine solutions on one common infrastructure<ul>
+<li>Confluence site that lists different details on arcitecture, security and 40 different FHIR profiles</li>
+<li>FUT denmark</li>
+</ul>
+</li>
+<li>Main arcitecture is a eHealth infrastructure, the centre of communication between ciizen, service providers and healthcare providers</li>
+<li>Federation portals, first system of its kind in Denmark communitaion between differnt part of the healthcare system using FHIR<ul>
+<li>First COPD patient yesterday</li>
+</ul>
+</li>
+<li>FHIR resources - Patient, AuditEvent Appointment, Communication, Organization</li>
+<li>FUT and it's stack API first<ul>
+<li>Not a disease specific platform</li>
+<li>13 FHIr services, subset of the FHIR resources, 50 application services running</li>
+</ul>
+</li>
+<li>Security model is not SMART, but SMART'ish<ul>
+<li>Federate different identity providers</li>
+<li>Attributes for roles and assotionations in SAM</li>
+<li>Access to FHIR resources is federated using role and also what care team you participate in</li>
+<li>CareTeams if the actual FHIR resources referaence your CareTeam for you to have access to it</li>
+<li>How do you administrate the care teams efficiently? in cooperation including caregivers from many different organizations<ul>
+<li>No limits to the different administrators, the organizations need to govern this themself<ul>
+<li>One administrator can assign their collegues</li>
+</ul>
+</li>
+<li>A true distributed model</li>
+</ul>
+</li>
+<li>Tool support for the administrators<ul>
+<li>SAML attribute builder</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>FUT is based on FHIR started R3 converto R4<ul>
+<li>One IG to cover them all</li>
+<li>Based on HAPI fhir implementation with a large amount of customization</li>
+</ul>
+</li>
+</ul>
+<h3 id="questionscomments_1">Questions/comments</h3>
+<ul>
+<li>How is the SAML tool integrated with the different adminstration tools in different orgz</li>
+<li>What is the timeline for use FUT infrastructure<ul>
+<li>Municipality project are on FUT</li>
+<li>First COPD patient using Questionaire and Observation</li>
+</ul>
+</li>
+</ul>
+<h2 id="denmark-transisition-from-legacy">Denmark Transisition from legacy</h2>
+<ul>
+<li>EDIFACT, XML, CDA and now try to move to HL7 FHIR, messaging with HL7 FHIR</li>
+<li>Sundhedsdatanet - Medcom</li>
+<li>use-case for webservices and webservicees</li>
+<li>EHMI - with eDelivery </li>
+<li>Test and certification of systems using standards</li>
+<li>Stop using danish standards - start using HL7 standards, startu using english as communication language</li>
+<li>Standard catalog</li>
+<li>Messging, including refferal hotel</li>
+<li>Webservice enabled - lab orders, etc</li>
+<li>Document sharing<ul>
+<li>Patient overview</li>
+<li>Patient reported outcome</li>
+<li>pregnancy journal</li>
+</ul>
+</li>
+<li>Lessons learned so far<ul>
+<li>Loose coupling</li>
+<li>Not a 1:1 transition to FHIR, take the use-cases more suitable for REST communication</li>
+</ul>
+</li>
+<li>FHIR is recommended, but expensive to implement<ul>
+<li>New functionality added to the FHIR messaging spec</li>
+</ul>
+</li>
+<li>New infrastructure for messaging</li>
+<li>Test and certification<ul>
+<li>more than transport, semantics and standards</li>
+</ul>
+</li>
+<li>Technical integration, shared information, dialog with wendors</li>
+</ul>
+<h3 id="danish-fhir-core-profiles">Danish FHIR core profiles</h3>
+<ul>
+<li>Patient, organization etc.</li>
+</ul>
+<h3 id="channel-strategy-communication-paradigm">Channel strategy (communication paradigm)</h3>
+<ul>
+<li>Messaging, document sharing, FHIR services, Linking systems</li>
+<li>Sustainaility of the modernization project<ul>
+<li>added functionality comes at a cost</li>
+</ul>
+</li>
+<li>Deloitte concluded that some messages should be exchanged with FHIR API's</li>
+</ul>
+<h3 id="questions">Questions</h3>
+<ul>
+<li>How have you handled labratory reports that should be witheld from the patient?<ul>
+<li>In the lab result there are consent information</li>
+<li>National service my consent - certain lab results could be witheld</li>
+</ul>
+</li>
+<li>Any thougths of what use-cases are better served by REST than by the messaging paradigm? What makes the use-cases more suitable for RESTFUL API?</li>
+<li>but expensive to implement what drives the cost? Are FHIR the best model for message based communication? Messaging have low maturity in the FHIr standard itself</li>
+</ul>
+<h2 id="eventuelt-og-diskusjon">Eventuelt og diskusjon</h2>
+<h2 id="swedish-base-fhir-profiles">Swedish Base FHIR profiles</h2>
+<ul>
+<li>The details <a href="hl7.se/fhir/ig/base/index.html">on</a></li>
+<li>Work group from regions authorities, system vendors, Inera etc.</li>
+<li>Focus on profiling swedish concepts decide how the swedish specialites is done in the same way across implementation</li>
+<li>Problem with org and funding</li>
+<li>Four profiles and 3 extensions<ul>
+<li>Patient - Typical info from tax-agency for Patient info</li>
+<li>Practititoer - swedish identifiers, qualification identifiers and some different swedish specific coding for qualification</li>
+<li>Organization - Swedish </li>
+</ul>
+</li>
+<li>Use cases - Swidish medication list is one example</li>
+</ul>
+<h2 id="national-swedish-medication-list">National Swedish medication list</h2>
+<ul>
+<li>Made by swedish health agency</li>
+<li>Healthcare staff and pharmacists get the same information about the prescriptions<ul>
+<li>External API's are FHIR based</li>
+<li>on-boarding in progress</li>
+</ul>
+</li>
+<li>Techincal shift from swedish specific SOAP to HL7 FHIR</li>
+<li>Documentation<ul>
+<li>Simplifier IG in english - with examples</li>
+<li>Hanbook for FHIR in swedish</li>
+<li>The HL7 FHIR documentation</li>
+</ul>
+</li>
+<li>Advantages of using FHIR<ul>
+<li>Semantics - using FHIr you get a backbone structure and defintion</li>
+<li>REST is a powerfull and flexible comm paradigm</li>
+<li>FHIR implementation is quicker using SDK and existing tools</li>
+</ul>
+</li>
+<li>The profiles are documented on SIMPLIFIER</li>
+</ul>
+<h3 id="questions_1">Questions</h3>
+<ul>
+<li>Inera have provided some services - but the knowledgable persons have left the organization</li>
+<li>We have tried to extend the swedish base profiles when working with the industry profiles<ul>
+<li>Tweaking the publication process</li>
+</ul>
+</li>
+<li>Swedish strategy is to get the industry to work on profiles<ul>
+<li>Have to find ways to work together</li>
+</ul>
+</li>
+</ul>
+<h2 id="the-chat-containing-some-important-links-to-documentation">The chat (containing some important links to documentation)</h2>
+<p>Meldingsliste
+Profilbilde av Mikael Rinnetmäki.
+Jens   Kristian   Villadsen  I can tell you... av Mikael Rinnetmäki
+Mikael Rinnetmäki (Ekstern)14:26
+Jens Kristian Villadsen I can tell you how I'd model that (system changing access rights mid session) with SMART. Offline...</p>
+<p>Profilbilde av Reza Baharmand.
+then who is the admin of administrator team... av Reza Baharmand
+Reza Baharmand (Ekstern)14:28
+then who is the admin of administrator teams?</p>
+<p>Profilbilde av Trond André Aag (gjest).
+Begynn referansen, Jens Kristian Villadsen ... av Trond André Aag (gjest)
+Trond André Aag (gjest)14:28
+Mikael Rinnetmäki
+08.02.2023 14:26
+Jens Kristian Villadsen I can tell you how I'd model that (system changing access rights mid session) with SMART. Offline...
+Do you have any documentation you can share?</p>
+<p>Profilbilde av Jens Kristian Villadsen (gjest).
+Kobling https://ehealth-dk.atlassian.net/wi... av Jens Kristian Villadsen (gjest)
+Jens Kristian Villadsen (gjest)14:28
+https://ehealth-dk.atlassian.net/wiki/spaces/EDTW/overview</p>
+<p>Profilbilde av Mikael Rinnetmäki.
+Begynn referansen, Do you have any document... av Mikael Rinnetmäki
+Mikael Rinnetmäki (Ekstern)14:30
+Trond André Aag (gjest)
+08.02.2023 14:28
+Do you have any documentation you can share?
+The SMART spec, of course. 😋In addition to that, just some view on how identity providers / authorization servers should work. Short-lived access tokens, etc.</p>
+<p>Profilbilde av Camilla Urup Noe Andersson.
+"careteam" has been a big discussion in the... av Camilla Urup Noe Andersson
+Camilla Urup Noe Andersson (Ekstern)14:30
+"careteam" has been a big discussion in the project, contact me if you want to know more about how the organizations handle their "careteams :)
+Profilbilde av Jens Kristian Villadsen (gjest).
+Kobling https://docs.ehealth.sundhed.dk/ av Jens Kristian Villadsen (gjest)
+Jens Kristian Villadsen (gjest)14:32
+https://docs.ehealth.sundhed.dk/</p>
+<p>Profilbilde av Sørlien, Ingvar (gjest).
+What is now the timeline to start using the... av Sørlien, Ingvar (gjest)
+Sørlien, Ingvar (gjest)14:33
+What is now the timeline to start using the FUT infrastructure?</p>
+<p>Profilbilde av Mikael Rinnetmäki.
+Begynn referansen, The SMART spec, of cours... av Mikael Rinnetmäki
+Mikael Rinnetmäki (Ekstern)14:33
+Mikael Rinnetmäki
+08.02.2023 14:30
+The SMART spec, of course. 😋In addition to that, just some view on how identity providers / authorization servers should work. Short-lived access tokens, etc.
+The PractitionerRole is another obvious entry point.</p>
+<p>While I remember, please make an entry in y... av Mikael Rinnetmäki
+Mikael Rinnetmäki (Ekstern)14:37
+While I remember, please make an entry in your calendars for the Radical Health Festival (https://radicalhealthfestival.messukeskus.com/) on June 12-15 in Helsinki. We will probably have some pan Nordic activities connected to the event. Like a workshop for Nordic IPA / harmonizing national base profiles.</p>
+<p>Profilbilde av Reza Baharmand.
+Begynn referansen, While I remember, please... av Reza Baharmand
+Reza Baharmand (Ekstern)14:44
+Mikael Rinnetmäki
+08.02.2023 14:37
+While I remember, please make an entry in your calendars for the Radical Health Festival (https://radicalhealthfestival.messukeskus.com/) on June 12-15 in Helsinki. We will probably have some pan Nordic activities connected to the event. Like a workshop for Nordic IPA / harmonizing national base pr…
+Invitation without Discount code? 😆</p>
+<p>Profilbilde av Michael Johansen.
+Core profiling is also pro bono in Denmark,... av Michael Johansen
+Michael Johansen (Ekstern)14:44
+Core profiling is also pro bono in Denmark, as in sweden. Any sponsorship in Norway or Finland?</p>
+<p>Profilbilde av Espen Stranger Seland.
+Good old "dugnad" in Norway.  av Espen Stranger Seland
+Espen Stranger Seland14:45
+Good old "dugnad" in Norway. </p>
+<p>Profilbilde av Mikael Rinnetmäki.
+In Finland the base profiling work is funde... av Mikael Rinnetmäki
+Mikael Rinnetmäki (Ekstern)14:45
+In Finland the base profiling work is funded by HL7 Finland. HL7 Finland gets its funding from members, as both membership and project fees.</p>
+<p>Highly recommended model! Wink av Mikael Rinnetmäki
+Mikael Rinnetmäki (Ekstern)14:45
+Highly recommended model! 😉</p>
+<p>Kobling https://fhir.fi/finnish-base-profil... av Mikael Rinnetmäki
+Mikael Rinnetmäki (Ekstern)14:47
+https://fhir.fi/finnish-base-profiles/#participate-in-ig-development-and-maintenance</p>
+<p>Regarding the Swedish base profiles: In Swe... av Mikael Rinnetmäki
+Mikael Rinnetmäki (Ekstern)14:50
+Regarding the Swedish base profiles: In Sweden you also have the industry initiative for the base profiles, https://build.fhir.org/ig/SvenskaIndustriProfiler/fhir/. Are the aims of the projects similar or different? Do the projects work together? (Or did they, when the HL7 Sweden project was still running?)</p>
+<p>Profilbilde av Pétur Þór Valdimarsson.
+We have tried to extend the swedish base pr... av Pétur Þór Valdimarsson
+Pétur Þór Valdimarsson (Ekstern)14:50
+We have tried to extend the swedish base profiles when working with the industry profiles.</p>
+<p>Profilbilde av Mikael Rinnetmäki.
+Begynn referansen, Invitation without Disco... av Mikael Rinnetmäki
+Mikael Rinnetmäki (Ekstern)14:51
+Reza Baharmand
+08.02.2023 14:44
+Invitation without Discount code? 😆
+The side events most likely don't require registration to the event. But do send me a message if you're interested in a discount code.</p>
+<p>Profilbilde av Pétur Þór Valdimarsson.
+But they are separate projects working inde... av Pétur Þór Valdimarsson
+Pétur Þór Valdimarsson (Ekstern)14:51
+But they are separate projects working independently, even though some individuals are involved in both.</p>
+<p>Profilbilde av Petter Wolff.
+Thankyou all! av Petter Wolff</p>
+<p>Petter Wolff15:00
+Thankyou all!</p>
+<p>Profilbilde av Reza Baharmand.
+Thank you 🙏 av Reza Baharmand</p>
+<p>Reza Baharmand (Ekstern)15:01
+Thank you 🙏</p>
+<p>IPA is wery Important av Thomas Tveit Rosenlund</p>
+<p>Thomas Tveit Rosenlund15:01
+IPA is wery Important</p>
+<p>Profilbilde av Emmeli Gross (Gäst) (gjest).
+Thank you!  av Emmeli Gross (Gäst) (gjest)</p>
+<p>Emmeli Gross (Gäst) (gjest)15:01
+Thank you! 
+Profilbilde av Eirik Vegler Broen.
+thank you. Very interesting! av Eirik Vegler Broen</p>
+<p>Eirik Vegler Broen (Ekstern)15:01
+thank you. Very interesting!</p>
+<p>Profilbilde av Mikael Rinnetmäki.
+Please remember the Nordics on FHIR calls, ... av Mikael Rinnetmäki</p>
+<p>Mikael Rinnetmäki (Ekstern)15:03
+Please remember the Nordics on FHIR calls, every last Monday of the month, 14-15 CET. https://teams.microsoft.com/l/meetup-join/19%3ameeting_MWM4YzU1NzgtZDMwZi00NDQyLTljYzUtZmIyNzFiZGFmNjQx%40thread.v2/0?context=%7b%22Tid%22%3a%22ca4ef9a8-6017-4d6f-b345-ed904be37123%22%2c%22Oid%22%3a%225f7c049e-16dc-4481-bfb3-ff79b4f28d4e%22%7d</p>
+<p>Forhåndsvisning av nettadresse for Join conversation
+Join conversation
+teams.microsoft.com
+Møtet avsluttet: kl. 15:03 etter 2 timer 17 minutter 39 sekunder
+15:03 Møtet avsluttet: 2h 17m 39s
+Deltakelse
+Profilbilde av Sverre Martin Jensen (gjest).
+Begynn referansen, IPA is wery Important, T... av Sverre Martin Jensen (gjest)</p>
+<p>Sverre Martin Jensen (gjest)15:04
+Thomas Tveit Rosenlund
+08.02.2023 15:01
+IPA is wery Important
+Yeah, I like beer as well Thomas 😉</p>
+<p>har hurtigmeny</p>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">February 9, 2023 07:20:11</span>
+      
+    
+  </small>
+</div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.annotate", "content.tooltips", "navigation.indexes", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c2be25ad.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,957 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="HL7 Norway">
+      
+      
+      
+      
+      <link rel="icon" href="../../../images/logo.png">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.12">
+    
+    
+      
+        <title>Møte 10 i FHIR fagforum - HL7 Norway Best Practice</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.85bb2934.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.a6bdf11c.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="red">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#mte-10-i-fhir-fagforum" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="HL7 Norway Best Practice" class="md-header__button md-logo" aria-label="HL7 Norway Best Practice" data-md-component="logo">
+      
+  <img src="../../../images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            HL7 Norway Best Practice
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Møte 10 i FHIR fagforum
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="black" data-md-color-accent="red"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+            
+              <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+              </label>
+            
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="red"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+            
+              <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+              </label>
+            
+          
+        </form>
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/HL7Norway/best-practice" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    HL7-Norway-Best-Practice
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="HL7 Norway Best Practice" class="md-nav__button md-logo" aria-label="HL7 Norway Best Practice" data-md-component="logo">
+      
+  <img src="../../../images/logo.png" alt="logo">
+
+    </a>
+    HL7 Norway Best Practice
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/HL7Norway/best-practice" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    HL7-Norway-Best-Practice
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../index.md" class="md-nav__link">
+        Innledning
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../">FHIR fagforum</a>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          FHIR fagforum
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          Høringssvar
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Høringssvar
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../horingsvar/index.md" class="md-nav__link">
+        None
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          no-domain
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          no-domain
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../no-domain-metode/index.md" class="md-nav__link">
+        None
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+      
+      
+        
+          
+            
+          
+        
+      
+      
+        
+        
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../../dgi/">Den gode implementasjonsguide</a>
+          
+        </div>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Den gode implementasjonsguide
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          Profilering
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          Profilering
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../no-profileringsierarki.md" class="md-nav__link">
+        Nasjonalt profileringhierarki
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../no-basis-principles/" class="md-nav__link">
+        Prinsipper for nasjonal profilering
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#agenda" class="md-nav__link">
+    Agenda
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#presentasjoner" class="md-nav__link">
+    Presentasjoner
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hl7-norge-yvind-aassve" class="md-nav__link">
+    HL7 Norge - Øyvind AAssve
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sfm-og-fhir-erfaringer-dag-hammer-norsk" class="md-nav__link">
+    SFM og FHIR erfaringer, Dag Hammer Norsk
+  </a>
+  
+    <nav class="md-nav" aria-label="SFM og FHIR erfaringer, Dag Hammer Norsk">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sprsmal" class="md-nav__link">
+    Spørsmål
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#webmed-integrasjon-med-sfm-og-erfaringer-jarle-hjortland-webmed" class="md-nav__link">
+    Webmed integrasjon med SFM og erfaringer, Jarle Hjortland, Webmed
+  </a>
+  
+    <nav class="md-nav" aria-label="Webmed integrasjon med SFM og erfaringer, Jarle Hjortland, Webmed">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sprsmal-kommentarer" class="md-nav__link">
+    Spørsmål kommentarer
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ibruktakelse-av-safest-i-et-nasjonalt-perspektiv-elin-may-merry-og-bernd-moeske" class="md-nav__link">
+    Ibruktakelse av SAFEST i et nasjonalt perspektiv, Elin May Merry og Bernd Moeske
+  </a>
+  
+    <nav class="md-nav" aria-label="Ibruktakelse av SAFEST i et nasjonalt perspektiv, Elin May Merry og Bernd Moeske">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sprsmal_1" class="md-nav__link">
+    Spørsmål
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wgm-oppsummering" class="md-nav__link">
+    WGM oppsummering
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="mte-10-i-fhir-fagforum">Møte 10 i FHIR fagforum</h1>
+<ul>
+<li>Dato: 2022-02-02</li>
+<li>Klokkeslett: 1300-1500</li>
+<li>69 deltakere (innom møtet)</li>
+</ul>
+<p>FHIR fagforum (FFF) er et åpent forum om bruk og implementering av HL7 FHIR i Norge. FFF er åpent for alle.</p>
+<h2 id="agenda">Agenda</h2>
+<ol>
+<li>Velkommen og presentasjonsrunde, Thomas T Rosenlund, Direktoratet for e-helse (5 min)</li>
+<li>Informasjon fra HL7 Norge, Øyvind Aassve, Sykehuspartner (5 min)</li>
+<li>SFM og FHIR erfaringer, Dag Hammer Norsk Helsenett (30 min)</li>
+<li>Webmed integrasjon med SFM og erfaringer, Jarle Hjortland, Webmed (30 min)</li>
+<li>Ibruktakelse av SAFEST i et nasjonalt perspektiv, Elin May Merry og Bernd Moeske, Helse Sør-Øst (30 min) </li>
+<li>Oppsummering fra WGM, Øyvind, Espen og Thomas (10 min)</li>
+<li>Eventuelt</li>
+</ol>
+<h2 id="presentasjoner">Presentasjoner</h2>
+<ul>
+<li>Agenda, intro og intro til profilering <a href="../../presentasjon/2022-02-02-FHIR-fagforum-10.pdf">FHIR fagforum nr 10 Legemidler og medikasjon</a></li>
+<li><a href="../../presentasjon/2022-02-02-SFM%20og%20FHIR%20-%20FHIR%20fagforum.pdf">SFM og FHIR erfaringer</a></li>
+<li><a href="../../presentasjon/20220202-Ibruktakelse-av-SAFEST-nasjonalt-perspektiv-HSO.pdf">Ibruktakelse av SAFEST i et nasjonalt perspektiv</a></li>
+<li><a href="../../presentasjon/2022-02-02-FihrErfaringer.pdf">FHIR erfaringer implementasjon av integrasjon</a></li>
+</ul>
+<h2 id="hl7-norge-yvind-aassve">HL7 Norge - Øyvind AAssve</h2>
+<ul>
+<li>Neste møte WGM er i mai, tilbud om å delta fra HL7 Norge også sponsing</li>
+<li>Appointment og Encounter fra HL7 Norge basisprofil arbeidet, høring i februar</li>
+<li>Seminar med John Moehrke siste halvdel av februar om IHE XDS ved bruk av IHE MHD</li>
+<li>Profileringshierarkiet - internasjonale, basis, domene og implementerte profiler</li>
+<li>Pågående aktiviteter knyttet til basisprofiler</li>
+<li>Intro til legemiddelområdet - implementert FHIR grensesnitt i mange prosjekter og kontekster - SFM, SAFEST og Kjernejournal<ul>
+<li>Spent på hvordan dette skal henge sammen - spilt inn til Direktoratet for e-helse</li>
+</ul>
+</li>
+</ul>
+<h2 id="sfm-og-fhir-erfaringer-dag-hammer-norsk">SFM og FHIR erfaringer, Dag Hammer Norsk</h2>
+<ul>
+<li>Ønsket å ha en presentasjon sammen med SAFEST, men SAFEST kunne dessverre ikke stille denne gangen</li>
+<li>Modul for legemiddelbehandling i EPJ<ul>
+<li>Oppslag mot kjernejournal, RF og andre moduler for å presentere og gjennomføre forskrivning</li>
+<li>Tilgjengeliggjør informasjon om forskrivning gjennom FHIR API</li>
+</ul>
+</li>
+<li>Samhandling med nasjonale systemer er kompleks</li>
+<li>SFM Basis API for å skape kommunikasjon mellom EPJ og PLL</li>
+<li>SFM Datadeling API med fullversjon (GUI), gir tilgang til mer informasjon strukturer fra PLL?</li>
+<li>Hvorfor ikke SMART on FHIR app? SMART vil ha tilgang til data i EPJ, SFM lagrer egne data og har kun minimalt behov for kontekstinformasjon fra EPJ</li>
+<li>Dokumentasjon av FHIR API - SIMPLIFIER og GitHub<ul>
+<li>synkronisering mellom Github og SIMPLIFIER er ikke stabil nok, krever endel manuell interaksjon</li>
+</ul>
+</li>
+<li>Forge - for å profilere, selve profileringen må læres</li>
+<li>no-basis Patient benyttes som grunnlag for sfm-Patient direkte og det har fungert fint</li>
+<li>XMLSpy som verktøy for XML</li>
+<li>SFM Basis API - PLL dokument - testverktøy for å teste API<ul>
+<li>Funksjonalitet for å arbeide med pasienten og legemiddellisten - SFM Basis API testverktøy med GUI</li>
+</ul>
+</li>
+<li>FHIR Server for Azure ble valgt da den kom (istedenfor egenkomponert) - Det var en god avgjørelse<ul>
+<li>Tilgjengelig i Azure som plattform eller som OpenSource som man kan drifte selv på egen plattform</li>
+<li>Kom sent</li>
+<li>Problemer med UTF, regex problem, non-breaking-space feilet i validering</li>
+<li>SFM har businesslogikk bak dataelementer - Ikke Swagger?</li>
+</ul>
+</li>
+<li>Mange extensions - utvidelser fordi man måtte tilpasse den norske resepten (som er strøm på papir)<ul>
+<li>Mye profilering - mange tilpasninger</li>
+</ul>
+</li>
+<li>Har blitt inspirert mye av arbeidet med FHIR IPS</li>
+<li>MedicationBundle (BasisAPI) er et dokument (Bundle av type composition) med veldefinerte seksjoner som har definert forskjellig type innhold</li>
+<li>Datadeling (API for SFM Fullversjon) mer REST basert</li>
+<li>Benyttet .NET FHIR API, noen andre benytter rammeverk basert på Delphi</li>
+<li>Testsystem tilgjengelig på internet, integrasjon med HelseID</li>
+<li>Oppfølging av leverandører</li>
+<li>MedicationStatement - 4.0.1 forsvinner i R5?<ul>
+<li>Hva skjer ved overgangent til R5</li>
+</ul>
+</li>
+<li>Helseplattformen og Meona skal ta ibruk BasisAPI, SFM er på lufte</li>
+</ul>
+<h3 id="sprsmal">Spørsmål</h3>
+<ul>
+<li>Da kan sectionDispense kanskje på sikt også inneholde dokumentasjon fra utleveringer som gjøres med digitale hjelpemidler - digitale medisinskap, medisindispensere o.l. Hvor hentes data fra til denne seksjonen?<ul>
+<li>Ikke tenkt på automatisk utlevering i utgangspunktet</li>
+</ul>
+</li>
+<li>REST vs Operations?<ul>
+<li>Operations fungerer helt fint i FHIR server fra Microsoft</li>
+<li>EPJ er vanligvis ikke REST i natur, da er det </li>
+</ul>
+</li>
+<li>Er det diskutert om administrering også kunne være i SFM?<ul>
+<li>Ja løpende diskusjon om dette, ikek i scope nå</li>
+</ul>
+</li>
+<li>Autentisering og autorisering av brukere samme som kjernejournal?<ul>
+<li>Det er samme struktur og logikk, ikke personnummer og info i samme kall</li>
+</ul>
+</li>
+<li>Samarbeid med Webmed og helseplattformen - valgte Patient istedenfor sfm-Patient - spesifikk i forhold til å referere til eksakte profiler</li>
+</ul>
+<ul>
+<li>Er løsningen med sentral forskrivningsmodul/PLL vurdert opp mot Medical Device Regulation?<ul>
+<li>Jeg vet heller ikke hvordan dette stiller seg, men jeg vet at "A Medication Module" i et EPJ eksplisitt er beskrevet at er medical device. MDCG 2019-11 s. 19. https://ec.europa.eu/health/system/files/2020-09/md_mdcg_2019_11_guidance_en_0.pdf</li>
+</ul>
+</li>
+</ul>
+<h2 id="webmed-integrasjon-med-sfm-og-erfaringer-jarle-hjortland-webmed">Webmed integrasjon med SFM og erfaringer, Jarle Hjortland, Webmed</h2>
+<ul>
+<li>To kunder live, ønsker rulle ut til 100 kunder</li>
+<li>Lite kunnskap om FHIR i utgangspunktet<ul>
+<li>Krever mer enn ren Open API</li>
+</ul>
+</li>
+<li>Dokumentasjonen er ikke nøyaktig, hvilke felter i et API kall er påkrevet?<ul>
+<li>Hva betyr elementene?</li>
+<li>Må snakke mye med SFM for å forstå</li>
+<li>Hvordan ser svarene fra API'en ut?</li>
+<li>Hvilke felter inneholder hvilke verdi?</li>
+</ul>
+</li>
+<li>SIMPLIFIER har ikke innebyggede eksempler og integrasjonen </li>
+<li>FHIR extensions gir kompleks kode<ul>
+<li>Ødelegger for gjenbruken</li>
+<li>FHIR struktur er dyp, vanskelig å vite hvor i strukturen informasjon ligger</li>
+</ul>
+</li>
+<li>Største utfordring med SFM integrasjonen har vært HelseId, SFM session og Patient ticket<ul>
+<li>Holde session oppdatert med token</li>
+</ul>
+</li>
+<li>5 ganger mer ressurser enn man forventet</li>
+</ul>
+<ul>
+<li>FHIR fremover<ul>
+<li>Eksempler må være gode og vise hva man skal gjøres</li>
+<li>Eksempelprogram som fungerer, koden må være innholdsrik</li>
+</ul>
+</li>
+<li>Skuffende at Person og Melde.no går bort fra FHIR</li>
+<li>eHelse og NHN må stå for valget<ul>
+<li>Er i startgropen for SMART on FHIR</li>
+<li>Blir veldig dyrt om man ikke er tro mot beslutningen om FHIR</li>
+</ul>
+</li>
+<li>Bedre dokumentasjon</li>
+</ul>
+<h3 id="sprsmal-kommentarer">Spørsmål kommentarer</h3>
+<ul>
+<li>Støtten har vært god, men dokumentasjonen er ikke god nok, prosjektet har vært i fart</li>
+<li>FHIR API kan bli veldig kompliserte og vanskelig å se for seg ren Swagger<ul>
+<li>Gå igjennom de enkle use-casene på en god måte</li>
+</ul>
+</li>
+<li>HVordan beskriver man hva som er påkrevd av <ul>
+<li>Dokumentasjon av API funksjonalitet har blitt til iløpet av prosjektet</li>
+</ul>
+</li>
+<li>Ingvar Sørlien - SMART on fhir er avhengig av felles tillitsmodell<ul>
+<li>Fellest tillitsmodell og datadeling og FHIR - mulig tema?</li>
+</ul>
+</li>
+</ul>
+<h2 id="ibruktakelse-av-safest-i-et-nasjonalt-perspektiv-elin-may-merry-og-bernd-moeske">Ibruktakelse av SAFEST i et nasjonalt perspektiv, Elin May Merry og Bernd Moeske</h2>
+<ul>
+<li>Elin May Merry, Helse Sør-øst informasjonsarkitekt, innføring av SAFEST</li>
+<li>Berndt Moerske, informasjonsarkitekt</li>
+<li>Samhandling nasjonalt gitt nytt legemiddelregister</li>
+<li>Nasjonalt målbilde og korrdinering<ul>
+<li>Norsk Helse-IT, SAFEST, PLL </li>
+<li>færre feil, bedre overgang mellom omsorgsnivåer, redusere kostnader i forvaltning og mindre feilbehandling</li>
+<li>SAFEST kan gi stor gevinst men er også en stor investering</li>
+</ul>
+</li>
+<li>Legemiddel grunndata fra SAFEST med ISO IDMP<ul>
+<li>IDMP er besluttet i Norge gjennom legemiddeldirektivet</li>
+<li>SAFEST implementerer nytt legemiddelregister</li>
+</ul>
+</li>
+<li>SAFEST grunndata publiseres med FHIR<ul>
+<li>SPOR arbeider tett med FHIR miljøet, tett koblet sammen med standardiseringen i HL7 FHIR</li>
+<li>FHIR R5 er nesten helt kompatibel med SPOR sin IDMP implementering</li>
+<li>Trenger nesten ikke tilpasninger av FHIR for å støtte SPOR</li>
+<li>Microsoft Azure har ikke R5 ennå<ul>
+<li>Rekursive søk er ikke støttet av Microsoft FHIR</li>
+</ul>
+</li>
+<li>SAFEST FHIR R4 tilpasses til R5 modellen for den samme modellen</li>
+<li>Mange utvidelser gi kompleks kode</li>
+<li>Vi trenger FHIR for å levere funksjonalitet fort</li>
+</ul>
+</li>
+<li>Plan for leveranse, 1: Produkkoder, 2: Produsert legemiddel, 3: administrerbar legemiddel, 4:ernæring</li>
+<li>Først omgang SAFEST og FEST som kilder til legemiddel grunndata<ul>
+<li>Trenger å beslutte en felles nasjonal kilde til legemiddelinformasjon</li>
+</ul>
+</li>
+<li>FEST og SAFEST er ikke kompatible for innholdet i legemiddelinformasjonen<ul>
+<li>Legemiddel virkestoff forskringning har ikke tilsvarende ident i FEST</li>
+<li>Det er også endel kodeverk og måleenheter som benyttes forskjellig</li>
+<li>Mapping vil være en mulig kilde til feil siden det er mange aktører som må gjøre en slik mapping</li>
+</ul>
+</li>
+<li>Overgangen mellom FEST og SAFEST må sees i et nasjonalt perspektiv og kan ikke overlates til hver enkelt leverandør og virksomhet</li>
+<li>Trenger en nasjonal plan</li>
+<li>Koordinering fra direktoratet</li>
+</ul>
+<h3 id="sprsmal_1">Spørsmål</h3>
+<ul>
+<li>Etterlyser en koordinert innføring - helt i tråd med det som er gjennomført i forhold til nasjonale kodeverk og nasjonale meldingsstandarder - som også må være nasjonalt koordinert</li>
+<li>Observerer at Q4 22 skulle være ferdig med innføringen er det reelt?<ul>
+<li>Tror den vil fungerer, det som vises er leveransetidspunkt for SAFEST</li>
+</ul>
+</li>
+<li>Problemstillingen er kjent, e-Resept har forsøkt å følge prosjektet - tenkte å forberede seg for å benytte dette i eResept enig i at det må nasjonal koordinering til<ul>
+<li>Har vært svært langt prosjektløp og store endringer i scope underveis i prosjektet</li>
+<li>Mange misforståelser knyttet til hva SAFEST skal være og hva som blir levert</li>
+<li>Kan ikke ha to grunndataregistre for Legemidler i norge over lang tid</li>
+</ul>
+</li>
+<li>Foregår et arbeid med en satsing på felles grunndata for legemiddelinformasjon<ul>
+<li>Legemiddelinformasjon sett i sammenheng med livssyklus</li>
+<li>Besluttet i NUFA om tiltak på området, litt sent når man er igang med implementering...</li>
+<li>Dette er en stor overgang og vi må vite at investeringen er en-gangs</li>
+</ul>
+</li>
+</ul>
+<h2 id="wgm-oppsummering">WGM oppsummering</h2>
+<ul>
+<li>PA og FHIR I har mange interessante sesjoner</li>
+<li>content freeze mars for R5</li>
+<li>R5 ballot i may</li>
+<li>FAST - FHIR at Scale Taskforce - aksellerator program<ul>
+<li>Addresserer utfordringer knyttet til storskala implementasjon av FHIR<ul>
+<li>Hybrid</li>
+<li>Autentisering og autentisering i FHIR økosystem</li>
+<li>National directory</li>
+<li>Digital identity matching</li>
+</ul>
+</li>
+<li>Åpne møter for alle medlemmer</li>
+</ul>
+</li>
+</ul>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">February 14, 2022 11:43:24</span>
+      
+    
+  </small>
+</div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.code.annotate", "content.tooltips", "navigation.indexes", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.c2be25ad.min.js"></script>
+      
+    
+  </body>
+</html>
