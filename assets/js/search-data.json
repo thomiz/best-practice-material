@@ -1206,43 +1206,43 @@
     "doc": "FHIR fagforum møte nr 1",
     "title": "Møte i FHIR fagforum",
     "content": ". | Dato: 2020-11-04 | Klokkeslett: 1300-1400 | . FHIR fagforum (FFF) er et åpent forum om bruk og implementering av HL7 FHIR i Norge. FFF er åpent for alle. ",
-    "url": "/best-practice-material/agenda/2020-11-04-agenda/#m%C3%B8te-i-fhir-fagforum",
+    "url": "/best-practice-material/agenda/#m%C3%B8te-i-fhir-fagforum",
     
-    "relUrl": "/agenda/2020-11-04-agenda/#møte-i-fhir-fagforum"
+    "relUrl": "/agenda/#møte-i-fhir-fagforum"
   },"173": {
     "doc": "FHIR fagforum møte nr 1",
     "title": "Agenda",
     "content": ". | Velkommen og presentasjonsrunde (alle skriver i chatten hvor de kommer fra + aktuell erfaring/prosjekt) (5 min) | TNT til FFF (5 min) | Diskusjon av navn og mandat (20 min) | FHIR RESTful API (Kenneth) (20 min) | Forslag til tema og deltakelse fremover (10 min) | . ",
-    "url": "/best-practice-material/agenda/2020-11-04-agenda/#agenda",
+    "url": "/best-practice-material/agenda/#agenda",
     
-    "relUrl": "/agenda/2020-11-04-agenda/#agenda"
+    "relUrl": "/agenda/#agenda"
   },"174": {
     "doc": "FHIR fagforum møte nr 1",
     "title": "Navneforslag",
     "content": "Alle kan stemme på eller komme med egne navneforslag. Avstemning foregår i issue #52 . ",
-    "url": "/best-practice-material/agenda/2020-11-04-agenda/#navneforslag",
+    "url": "/best-practice-material/agenda/#navneforslag",
     
-    "relUrl": "/agenda/2020-11-04-agenda/#navneforslag"
+    "relUrl": "/agenda/#navneforslag"
   },"175": {
     "doc": "FHIR fagforum møte nr 1",
     "title": "Oppkobling til møte",
     "content": "Skype møte . ",
-    "url": "/best-practice-material/agenda/2020-11-04-agenda/#oppkobling-til-m%C3%B8te",
+    "url": "/best-practice-material/agenda/#oppkobling-til-m%C3%B8te",
     
-    "relUrl": "/agenda/2020-11-04-agenda/#oppkobling-til-møte"
+    "relUrl": "/agenda/#oppkobling-til-møte"
   },"176": {
     "doc": "FHIR fagforum møte nr 1",
     "title": "Kalender",
     "content": "ical møteinkalling . Påmelding er ikke nødvendig. ",
-    "url": "/best-practice-material/agenda/2020-11-04-agenda/#kalender",
+    "url": "/best-practice-material/agenda/#kalender",
     
-    "relUrl": "/agenda/2020-11-04-agenda/#kalender"
+    "relUrl": "/agenda/#kalender"
   },"177": {
     "doc": "FHIR fagforum møte nr 1",
     "title": "FHIR fagforum møte nr 1",
     "content": " ",
-    "url": "/best-practice-material/agenda/2020-11-04-agenda/",
+    "url": "/best-practice-material/agenda/",
     
-    "relUrl": "/agenda/2020-11-04-agenda/"
+    "relUrl": "/agenda/"
   }
 }
