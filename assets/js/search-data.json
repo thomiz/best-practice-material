@@ -505,248 +505,248 @@
   },"72": {
     "doc": "FHIR fagforum",
     "title": "Møteplan og referater",
-    "content": "| Dato | Tidspunkt | Agenda | Referat | . | 2020-11-04 | 1300-1400 | Møte #1 med virtuelt kickoff | Referat møte #1 | . | 2020-12-16 | 1300-1500 | Møte #2 Profilering og publisering | Referat møte #2 | . | 2021-01-27 | 1300-1500 | Møte #3 Legemidler og medikasjon | Referat møte #3 | . | 2021-03-10 | 1300-1500 | Møte #4 Behandlingsplan/CarePlan | Referat møte #4 | . | 2021-04-21 | 1300-1500 | Møte #5 SMART on FHIR | Referat møte #5 | . | 2021-06-02 | 1300-1500 | Møte #6 Terminologi on FHIR | Referat møte #6 | . | 2021-09-01 | 1300-1600 | Møte #7 Infrastruktur, servere, klienter, rammeverk | Referat møte #7 | . | 2021-10-20 | 1300-1500 | Møte #8 Build pipeline for Implementation Guide + bruk av Spark FHIR server | Referat møte #8 | . | 2021-12-01 | 1300-1500 | Møte #9 Prosjektpresentasjoner, Presenter DITT prosjekt! | Referat møte #9 | . | 2022-02-02 | 1300-1500 | Møte #10 Legemidler og medikasjon | Referat møte #10 | . | 2022-03-16 | 1300-1500 | Møte #11 Dødsårsak/Dødsmelding og transparens | Referat møte #11 | . | 2022-05-11 | 1300-1500 | Møte #12 Terminologi on FHIR | Referat møte #12 | . | 2022-08-31 | 1300-1500 | Møte #13 Sikkerhet, tilgangskontroll, logging, AuditEvent (use-case), HelseID og sikkerhetsbillett | Referat møte #13 | . | 2022-10-12 | 1300-1430 | AVLYST |   | . | 2022-11-30 | 1300-1500 | Møte #15 Pasientens prøvesvar, Digital behandling og egenbehandlingsplan, SAFEST | Referat møte #15 | . | 2023-02-08 | 1300-1500 | Møte #16 Nordic projects | Referat møte #16 | . | 2023-03-29 | 1300-1500 | Møte #17 Gravitate health | Referat møte #17 | . | 2023-05-24 | 1300-1500 | Møte #18 Infrastruktur, servere, klienter, rammeverk | referat møte #18 | . | 2023-08-30 | 1300-1500 | Møte #19 FHIR R5 with Grahame Grieve | referat møte #19 | . | 2023-10-18 | 1300-1500 | Møte #20 FHIR capabilities in EPIC and Helseplattformen | referat møte #20 | . | 2023-11-29 | 1300-1500 | Møte #21 FHIR og terminologi | referat møte #21 | . | 2024-02-07 | 1300-1500 | Møte #22 Observation og målinger on FHIR, VKP, Pasientens prøvesvar og HSØ PHGateway |   | . | 2024-xx-xx | 1300-1500 | Møte #23 Tema |   | . ",
+    "content": "Møtene arrangeres klokken 1300-1500, teams lenke ligger i agenda. | Dato | Tema | Agenda | Referat | . | 2021-06-02 | FHIR fagforum møte nr 6 | Terminologi on FHIR | Referat | . | 2021-04-21 | FHIR fagforum møte nr 5 | SMART on FHIR | Referat | . | 2021-03-10 | FHIR fagforum møte nr 4 | Behandlingsplan/CarePlan | Referat | . | 2021-01-27 | FHIR fagforum møte nr 3 | Legemidler og medikasjon | Referat | . | 2020-12-16 | FHIR fagforum møte nr 2 | Profilering og publisering | Referat | . | 2020-11-04 | FHIR fagforum møte nr 1 | Konstituerende møte | Referat | . ",
     "url": "/best-practice-material/docs/FHIR-faglig-forum/#m%C3%B8teplan-og-referater",
     
     "relUrl": "/docs/FHIR-faglig-forum/#møteplan-og-referater"
   },"73": {
+    "doc": "FHIR fagforum",
+    "title": "Statisk møteplan",
+    "content": "| Dato | Tidspunkt | Agenda | Referat | . | 2020-11-04 | 1300-1400 | Møte #1 med virtuelt kickoff | Referat møte #1 | . | 2020-12-16 | 1300-1500 | Møte #2 Profilering og publisering | Referat møte #2 | . | 2021-01-27 | 1300-1500 | Møte #3 Legemidler og medikasjon | Referat møte #3 | . | 2021-03-10 | 1300-1500 | Møte #4 Behandlingsplan/CarePlan | Referat møte #4 | . | 2021-04-21 | 1300-1500 | Møte #5 SMART on FHIR | Referat møte #5 | . | 2021-06-02 | 1300-1500 | Møte #6 Terminologi on FHIR | Referat møte #6 | . | 2021-09-01 | 1300-1600 | Møte #7 Infrastruktur, servere, klienter, rammeverk | Referat møte #7 | . | 2021-10-20 | 1300-1500 | Møte #8 Build pipeline for Implementation Guide + bruk av Spark FHIR server | Referat møte #8 | . | 2021-12-01 | 1300-1500 | Møte #9 Prosjektpresentasjoner, Presenter DITT prosjekt! | Referat møte #9 | . | 2022-02-02 | 1300-1500 | Møte #10 Legemidler og medikasjon | Referat møte #10 | . | 2022-03-16 | 1300-1500 | Møte #11 Dødsårsak/Dødsmelding og transparens | Referat møte #11 | . | 2022-05-11 | 1300-1500 | Møte #12 Terminologi on FHIR | Referat møte #12 | . | 2022-08-31 | 1300-1500 | Møte #13 Sikkerhet, tilgangskontroll, logging, AuditEvent (use-case), HelseID og sikkerhetsbillett | Referat møte #13 | . | 2022-10-12 | 1300-1430 | AVLYST |   | . | 2022-11-30 | 1300-1500 | Møte #15 Pasientens prøvesvar, Digital behandling og egenbehandlingsplan, SAFEST | Referat møte #15 | . | 2023-02-08 | 1300-1500 | Møte #16 Nordic projects | Referat møte #16 | . | 2023-03-29 | 1300-1500 | Møte #17 Gravitate health | Referat møte #17 | . | 2023-05-24 | 1300-1500 | Møte #18 Infrastruktur, servere, klienter, rammeverk | referat møte #18 | . | 2023-08-30 | 1300-1500 | Møte #19 FHIR R5 with Grahame Grieve | referat møte #19 | . | 2023-10-18 | 1300-1500 | Møte #20 FHIR capabilities in EPIC and Helseplattformen | referat møte #20 | . | 2023-11-29 | 1300-1500 | Møte #21 FHIR og terminologi | referat møte #21 | . | 2024-02-07 | 1300-1500 | Møte #22 Observation og målinger on FHIR, VKP, Pasientens prøvesvar og HSØ PHGateway |   | . | 2024-xx-xx | 1300-1500 | Møte #23 Tema |   | . ",
+    "url": "/best-practice-material/docs/FHIR-faglig-forum/#statisk-m%C3%B8teplan",
+    
+    "relUrl": "/docs/FHIR-faglig-forum/#statisk-møteplan"
+  },"74": {
     "doc": "FHIR fagforum",
     "title": "Mandat for fagforum",
     "content": "Mandat for FHIR fagforum . ",
     "url": "/best-practice-material/docs/FHIR-faglig-forum/#mandat-for-fagforum",
     
     "relUrl": "/docs/FHIR-faglig-forum/#mandat-for-fagforum"
-  },"74": {
+  },"75": {
     "doc": "FHIR fagforum",
     "title": "Samarbeid",
     "content": "Sidene drives i samarbeid mellom Direktoratet for e-helse og HL7 Norge. Spørsmål? Lyst til å bidra? Ta kontakt! . ",
     "url": "/best-practice-material/docs/FHIR-faglig-forum/#samarbeid",
     
     "relUrl": "/docs/FHIR-faglig-forum/#samarbeid"
-  },"75": {
+  },"76": {
     "doc": "Metode for utvikling av områdeprofiler",
     "title": "Metode for utvikling av områdeprofiler",
     "content": " ",
     "url": "/best-practice-material/docs/no-domain-metode/innledning.html",
     
     "relUrl": "/docs/no-domain-metode/innledning.html"
-  },"76": {
+  },"77": {
     "doc": "Metode for utvikling av områdeprofiler",
     "title": "Innledning",
     "content": "Metoden for utvikling av områdeprofiler beskriver hvordan HL7 FHIR kan tilpasses norske anvendelser, behov og krav. Metoden er en åpen og smidig prosess som skal sikre at profilene holder høy kvalitet og forankres hos alle relevante aktører i sektoren. De ferdige områdeprofilene blir publisert som normerende produkter (veiledere, retningslinjer og standarder). Metoden er basert på utviklingsmetoden for HL7 FHIR, Direktoratet for e-helses forvaltningsmodell for normerende produkter og profileringshierarkiet for HL7 FHIR i Norge. Den er publisert som et normativt produkt av typen veileder, se beskrivelse av normeringsnivå og dokumenttyper på ehelse.no. Utviklingen av områdeprofiler utføres av aktører i sektoren og normeringen av områdeprofilene utføres i henhold til Direktoratet for e-helses forvaltningsmodell. De to første kapitlene (Prinsipper og definisjon, Metodebeskrivelse) betraktes som kravdelen av dokumentet. Kravdelen inneholder krav til dokumentasjon av, forankring av og innhold i de endelige implementasjonsguidene. Kravene som stilles i denne delen av metoden må tilfredstilles om implementasjonsguiden skal normeres som en områdeprofil. ",
     "url": "/best-practice-material/docs/no-domain-metode/innledning.html#innledning",
     
     "relUrl": "/docs/no-domain-metode/innledning.html#innledning"
-  },"77": {
+  },"78": {
     "doc": "Metode for utvikling av områdeprofiler",
     "title": "Innholdsfortegnelse",
     "content": ". | Prinsipper og definisjon | Metodebeskrivelse . | Behov og krav | Utrede | Utvikle | Utprøve og evaluere | Realisere | Normere | . | Bruk av metoden | Vedlikehold og forvaltning av områdeprofiler | Vedlikehold og forvaltning av metoden | Bakgrunn | Termer og definisjoner | . ",
     "url": "/best-practice-material/docs/no-domain-metode/innledning.html#innholdsfortegnelse",
     
     "relUrl": "/docs/no-domain-metode/innledning.html#innholdsfortegnelse"
-  },"78": {
+  },"79": {
     "doc": "Metode for utvikling av områdeprofiler",
     "title": "Hvorfor normerende produkter?",
     "content": "Hensikten med direktoratets normerende produkter er å . | sikre enhetlig digital samhandlingsevne i helse- og omsorgstjenesten | bidra til effektive, trygge og sammenhengende pasientforløp | gi forutsigbarhet for virksomheter og leverandørmarkedet | . De normerende produktene er rettet mot virksomhetene i helse- og omsorgssektoren og deres samhandlingspartnere, samt leverandørmarkedet. Produktene skal gi rammer og retningslinjer for digitaliseringen, og være til hjelp og støtte for virksomheter, leverandører og prosjekter. ",
     "url": "/best-practice-material/docs/no-domain-metode/innledning.html#hvorfor-normerende-produkter",
     
     "relUrl": "/docs/no-domain-metode/innledning.html#hvorfor-normerende-produkter"
-  },"79": {
+  },"80": {
     "doc": "Metode for utvikling av områdeprofiler",
     "title": "Målgruppe, forvaltning og tilbakemeldinger",
     "content": "Målgruppen er alle som utvikler samhandlingsløsninger med HL7 FHIR, og som ønsker å utvikle eller bidra til nasjonale veiledere, retningslinjer og standarder. Utviklingen av områdeprofiler kan utføres av alle. Normeringen av områdeprofilene utføres i henhold til Direktoratet for e-helses forvaltningsmodell. Metoden vil revideres etter innspill fra brukerne, når sektoren får mer erfaring med bruk av HL7 FHIR standarden generelt og utvikling/bruk av områdeprofiler spesielt. Tilbakemeldinger, forslag til endringer legges inn som GitHub issues. Ansvarlig forvalter for metoden er Direktoratet for e-helse. Les mer om forvaltning av metoden her. ",
     "url": "/best-practice-material/docs/no-domain-metode/innledning.html#m%C3%A5lgruppe-forvaltning-og-tilbakemeldinger",
     
     "relUrl": "/docs/no-domain-metode/innledning.html#målgruppe-forvaltning-og-tilbakemeldinger"
-  },"80": {
+  },"81": {
     "doc": "Internasjonale referanser for områdeprofilering",
     "title": "Områdeprofiler – viktigste internasjonale referanser",
     "content": "Dette dokumentet gir en kort oversikt over noen sentrale internasjonale referanser for utforming av områdeprofiler. HL7 International har fra 2019 utvidet fokuset fra primært å handle om utvikling av FHIR-standarden og ressursene, til å legge mer vekt på samordnet implementering. Samordnet implementering legger til rette for at ulike aktører tar i bruk (profilerer) FHIR på samme måte på like problemstillinger for å oppnå semantisk samhandlingsevne også på tvers av landegrenser. Dette er i stor grad tenkt gjennomført ved å utarbeide internasjonale implementasjonsguider som kan brukes som utgangspunkt for lokal bruk i bredest mulig skala. De såkalte akseleratorprogrammene er en satsning som understøtter dette. FHIR som standard har åpnet for mer fleksibel og agil bruk, noe som har vært vektlagt for å adopsjon i en tidlig fase, men for mye fleksibilitet vil redusere graden av semantisk samhandlingsevne i større skala. Områdeprofilene har til hensikt å uttrykke en riktig balanse mellom behov for fleksibilitet og standardisering på nasjonalt nivå, samt å sikre at nasjonal standardisering er basert på de mest relevante internasjonale implementasjonsguidene for områdene de dekker. Prinsippene for områdeprofiler beskriver at nasjonale områdeprofiler bør baseres på internasjonalt arbeid som adresserer de respektive områdene dersom det finnes. Dette også på grunn av: . | Ressursutnyttelse (gjenbruke internasjonal innsats, erfaringer og ekspertise på anvendelsesområder som ofte er direkte overførbare) | Bedre samhandlingsevne med internasjonalt leverandørmarked. Implementasjonsguider som de har implementert ut-av-boksen, vil være raskere å mer kostnadseffektivt å ta i bruk også på nasjonalt nivå. | Forenkle samhandlingsevne på tvers av landegrenser. | . I mange tilfeller kan det være flere internasjonale implementasjonsguider som kan være aktuelt for et område. Da bør det gjøres en vurdering av hvilke(n) referanse som gir størst verdi for prosjektet ut fra hvor sentrale de ulike implementasjonsguidene er, hvor stor adopsjon de har fått i marked og blant leverandører etc. FHIR-spesifikasjon FHIR-spesifikasjonen er den sentrale referansen for all FHIR-utvikling. Spesifikasjonen i seg selv inneholder ikke så mange fullt implementasjonsguider og profiler, men det finnes noen eksempler. Implementasjonsguider/ profiler beskrevet direkte i FHIR-spesifikasjonen bør være førstevalg hvis det finnes flere alternativer. Vital Signs er et eksempel på profiler som en del av spesifikasjonen: kan du finne her: https://www.hl7.org/fhir/observation-vitalsigns.html . Merk også at FHIR spesifikasjonen har et “extension-registry” med hyppig brukte internasjonale ekstensjoner. Man bør gjenbruke disse hvis de kan brukes i stedet for å lage særnorske ekstensjoner. Eksempler på bruk av offisielle extensions er for eksempel ADXP extension som er tatt i bruk i no-basis-Address profilen. ",
     "url": "/best-practice-material/docs/profilering/internasjonale-refs.html#omr%C3%A5deprofiler--viktigste-internasjonale-referanser",
     
     "relUrl": "/docs/profilering/internasjonale-refs.html#områdeprofiler--viktigste-internasjonale-referanser"
-  },"81": {
+  },"82": {
     "doc": "Internasjonale referanser for områdeprofilering",
     "title": "Argonaut",
     "content": "Argonaut er en organisasjon som er drevet og finansiert av en sammenslutning av stort sett amerikanske leverandører inkl Epic, Cerner, Accenture, Apple. Hensikten med Argonaut er stimulere bruk av FHIR og OAuth for informasjonsutvekslling i helsesektoren ved å utvikle internasjonale implementasjonsguider for prioriterte områder. Argonaut har jobbet tett med arbeidsgruppene i HL7 International, og samarbeidsmodellen mellom industri og HL7 ble utgangspunktet for Akseleratorprogram-modellen som HL7 International nå også har overført til andre områder. En av de mest kjente IG-ene fra Argonaut er Data Query implementation guide. US Core er et sett av grunnprofiler for “US realm” basert på krav og spesifikasjoner fra Argonaut Data Query og ONCs US Core Data for Interoperability (USCDI). Argonaut har også utviklet et sett av andre implmentasjonsguider som for eksempel Clinical Notes og bruk av FHIR Questionnaire/ QuestionnaireRespons, og fortsetter kontinuerlig å etablere flere. http://fhir.org/guides/argonaut/ . ",
     "url": "/best-practice-material/docs/profilering/internasjonale-refs.html#argonaut",
     
     "relUrl": "/docs/profilering/internasjonale-refs.html#argonaut"
-  },"82": {
+  },"83": {
     "doc": "Internasjonale referanser for områdeprofilering",
     "title": "International Patient Summary (IPS)",
     "content": "IPS er en implementasjonsguide opprinnelig utviklet av CEN for tilgjengeliggjøring av en “pasientoppsummering” – tilgjengeliggjøring av et minimumsett av informasjon uavhengig av spesialitet og diagnose – for helsepersonell som har behov for dette for akuttbehandling. I etterkant har man sett at denne informasjonen også kan være nyttig for tilgjengeliggjøring av informasjon i planlagte forløp. IPS har også tilhørende implementasjonsguider for CDA og HL7 FHIR som beskriver hvordan oppsummeringen kan deles som et dokument. Det er en prosess for å gjøre IPS til en ISO-standard. ",
     "url": "/best-practice-material/docs/profilering/internasjonale-refs.html#international-patient-summary-ips",
     
     "relUrl": "/docs/profilering/internasjonale-refs.html#international-patient-summary-ips"
-  },"83": {
+  },"84": {
     "doc": "Internasjonale referanser for områdeprofilering",
     "title": "mCode/ CodeX",
     "content": "mCODE (minimalCommonOncologyDataElements) var et initiative for å beskrive et grunnsett av strukturerte dataelementer for utveksling av onkologidata. En av målsettingene med mCODE var å tilgjengeliggjøre relevante behandlingsdata for bruk i forskning. Common Oncology Data Elements eXtensions (CodeX) er en fortsettelse av mCODE og vil fortsette å utvikle støtte for flere prioriterte use-case for onkologi. CodeX ble en offisiell FHIR Accelerator i slutten av 2019. ",
     "url": "/best-practice-material/docs/profilering/internasjonale-refs.html#mcode-codex",
     
     "relUrl": "/docs/profilering/internasjonale-refs.html#mcode-codex"
-  },"84": {
+  },"85": {
     "doc": "Internasjonale referanser for områdeprofilering",
     "title": "Vulcan",
     "content": "Vulcan ble etablert som en HL7 Acceleator i juli 2020, og har som formål å samle initiativer knyttet til å integrere databehov translasjonsforskning og klinisk forskning . ",
     "url": "/best-practice-material/docs/profilering/internasjonale-refs.html#vulcan",
     
     "relUrl": "/docs/profilering/internasjonale-refs.html#vulcan"
-  },"85": {
+  },"86": {
     "doc": "Internasjonale referanser for områdeprofilering",
     "title": "Andre implementasjonsguider",
     "content": "I UK arbeider NHS digital aktivt med tilpasninger av HL7 FHIR til deres bruk. De har foreløpig fokusert på bruksområder som de kaller CareConnect (medikasjon, allergier, diagnoser, observasjoner og prosedyrer) og Transfer of Care som tilsvarer henvisning og epikrise. Nederland har i en årrekke utarbeidet informasjonsmodeller for en rekke brukerhistorier (HCIM) og har i de senere år også profilert HL7 FHIR for å støtte bruk av disse informasjonsmodellene. Det er forventet at Integrating the Health Enterprise (IHE) vil satse på profilering av FHIR-profiler og implementasjonsguider fremover, og de er blant annet valgt som samarbeidspartner for ONC i USA. I forhold til områdeprofiler bør vi derfor følge med på hva som skjer i fremover i IHE. HL7 International har ellers etablert et register hvor alle som har en implementasjonsguide som de mener kan ha interesse for et bredere publikum kan publisere disse. Dette registeret finnes her: https://registry.fhir.org/guides . ",
     "url": "/best-practice-material/docs/profilering/internasjonale-refs.html#andre-implementasjonsguider",
     
     "relUrl": "/docs/profilering/internasjonale-refs.html#andre-implementasjonsguider"
-  },"86": {
+  },"87": {
     "doc": "Internasjonale referanser for områdeprofilering",
     "title": "openEHR",
     "content": "openEHR arketyper er utviklet for standardisert lagring i EPJ-løsninger, og ikke for utveksling. Når informasjon i arketypene skal utveksles er det imidlertid aktuelt å bruke FHIR. Arketypene er har mye rikere modeller, samt at de har definert verdisett (tillatte koder) for kodede informasjonselementer, og kan derfor være grunnlag for å beskrive kliniske modeller som ikke er definert i FHIR (ekstensjoner ). ",
     "url": "/best-practice-material/docs/profilering/internasjonale-refs.html#openehr",
     
     "relUrl": "/docs/profilering/internasjonale-refs.html#openehr"
-  },"87": {
+  },"88": {
     "doc": "Internasjonale referanser for områdeprofilering",
     "title": "Internasjonale referanser for områdeprofilering",
     "content": " ",
     "url": "/best-practice-material/docs/profilering/internasjonale-refs.html",
     
     "relUrl": "/docs/profilering/internasjonale-refs.html"
-  },"88": {
+  },"89": {
     "doc": "Mandat for FHIR fagforum",
     "title": "Mandat for FHIR fagforum",
     "content": "FHIR fagforum (FFF) er et åpent forum om bruk og implementering av HL7 FHIR i Norge. FFF er åpent for alle. ",
     "url": "/best-practice-material/docs/FHIR-faglig-forum/mandat.html",
     
     "relUrl": "/docs/FHIR-faglig-forum/mandat.html"
-  },"89": {
+  },"90": {
     "doc": "Mandat for FHIR fagforum",
     "title": "Formålet",
     "content": "HL7 FHIR er en standard designet for utveksling av helseinformasjon. Formålet med FFF er å øke kompetansen og dele erfaringer med bruk av standarden HL7 FHIR i Norge. FFF skal fungere som et åpent forum for faglige presentasjoner, erfaringsformidling og åpne diskusjoner knyttet til anvendelse av HL7 FHIR for samhandling. FFF er et verktøy i arbeidet med å få til en koordinert utvikling og bruk av HL7 FHIR i Norge. Ingen uttalelser fra deltakere i forumet er bindende for organisasjonen deltakeren representerer, men den enkelte deltaker oppfordres til å uttale seg basert på tilgjengelig kunnskap og erfaring innen fagområdet. ",
     "url": "/best-practice-material/docs/FHIR-faglig-forum/mandat.html#form%C3%A5let",
     
     "relUrl": "/docs/FHIR-faglig-forum/mandat.html#formålet"
-  },"90": {
+  },"91": {
     "doc": "Mandat for FHIR fagforum",
     "title": "Relevante fagområder",
     "content": "Listen er ikke uttømmende: . | implementering og implementeringserfaringer | profilering og implementasjonsguider | sikkerhet og autentisering | FHIR conformance | terminologi og terminologbinding | samhandling og utveksling | arkitektur | semantisk samhandling | hvordan ta i bruk FHIR | oppbygningen og versjonering av tjenester | teknisk infrastruktur | eksempler på implementering | normering | internasjonale trender og utvikling | standardiseringsarbeidet i HL7 Norge og HL7 International | sammenheng med andre områder og standarder | . ",
     "url": "/best-practice-material/docs/FHIR-faglig-forum/mandat.html#relevante-fagomr%C3%A5der",
     
     "relUrl": "/docs/FHIR-faglig-forum/mandat.html#relevante-fagområder"
-  },"91": {
+  },"92": {
     "doc": "Mandat for FHIR fagforum",
     "title": "Eierskap",
     "content": "FFF har ikke noe formelt eierskap, men drives idag av Direktoratet for e-Helse i samarbeid med HL7 Norge. ",
     "url": "/best-practice-material/docs/FHIR-faglig-forum/mandat.html#eierskap",
     
     "relUrl": "/docs/FHIR-faglig-forum/mandat.html#eierskap"
-  },"92": {
+  },"93": {
     "doc": "Mandat for FHIR fagforum",
     "title": "Sammensetning",
     "content": "FFF er åpent for alle som er interessert. Representanter for alle typer aktører som opererer innen norsk helse- og omsorgssektor er velkommen til å delta enten de representerer private leverandører, helsetilbydere, eller offentlige virksomheter. ",
     "url": "/best-practice-material/docs/FHIR-faglig-forum/mandat.html#sammensetning",
     
     "relUrl": "/docs/FHIR-faglig-forum/mandat.html#sammensetning"
-  },"93": {
+  },"94": {
     "doc": "Meldinger",
     "title": "Mål",
     "content": "Lage implementasjonsguide for messaging, blant annet for å erstatte HIS 80601:2006 Hodemelding 1.2. Utkast laget i 2017, men ikke jobbet videre med. ",
     "url": "/best-practice-material/docs/IG-og-dokumentasjon/messaging.html#m%C3%A5l",
     
     "relUrl": "/docs/IG-og-dokumentasjon/messaging.html#mål"
-  },"94": {
+  },"95": {
     "doc": "Meldinger",
     "title": "Prioritering",
     "content": "Direktoratet for e-helse har i sin tiltaksplan i Veikart og planer for e-helsestandarder 2018-2022 foreløpig satt tiltaket Utrede bruk av internasjonale standarder for meldingsutveksling til 2021-2022. Prosjekter som melder sin interesse oppfordres til å skrive seg inn under. ",
     "url": "/best-practice-material/docs/IG-og-dokumentasjon/messaging.html#prioritering",
     
     "relUrl": "/docs/IG-og-dokumentasjon/messaging.html#prioritering"
-  },"95": {
+  },"96": {
     "doc": "Meldinger",
     "title": "Interessenter",
     "content": ". | Digitale innbyggertjenester (DIS), Helsenorge.no . | Bruker i dag en hybrid av Hodemelding og FHIR-ressurser. | . | Velferdsteknologisk knutepunkt (VKP), Velferdsteknologiprogrammet . | Egen profil av MessageHeader i drift | . | AMK-prosjektet / Helse Vest RHF . | AMK -&gt; NHN -&gt; regioner | . | . ",
     "url": "/best-practice-material/docs/IG-og-dokumentasjon/messaging.html#interessenter",
     
     "relUrl": "/docs/IG-og-dokumentasjon/messaging.html#interessenter"
-  },"96": {
+  },"97": {
     "doc": "Meldinger",
     "title": "Diskusjoner og FHIR MessageHeader",
     "content": "Diskusjon på chat . Norge og HER-id Endpoints og MessageHeader . HL7 FHIR tickets . | HL7 FHIR Jira tracker 33690 | HL7 FHIR Jira tracker 26898 | HL7 FHIR Jira tracker 32369 | . ",
     "url": "/best-practice-material/docs/IG-og-dokumentasjon/messaging.html#diskusjoner-og-fhir-messageheader",
     
     "relUrl": "/docs/IG-og-dokumentasjon/messaging.html#diskusjoner-og-fhir-messageheader"
-  },"97": {
+  },"98": {
     "doc": "Meldinger",
     "title": "Meldinger",
     "content": " ",
     "url": "/best-practice-material/docs/IG-og-dokumentasjon/messaging.html",
     
     "relUrl": "/docs/IG-og-dokumentasjon/messaging.html"
-  },"98": {
+  },"99": {
     "doc": "Beskrivelse av utviklingsmetoden",
     "title": "Beskrivelse av utviklingsmetoden",
     "content": "Metoden benytter seg av faser som er beskrevet i forvaltningsmodellen og beskriver hvilke oppgaver som må gjennomføres i hver av fasene når områdeprofiler skal utvikles. Figur Metode for utvikling av områdeprofiler . ",
     "url": "/best-practice-material/docs/no-domain-metode/metodebeskrivelse.html",
     
     "relUrl": "/docs/no-domain-metode/metodebeskrivelse.html"
-  },"99": {
+  },"100": {
     "doc": "Beskrivelse av utviklingsmetoden",
     "title": "Fasene i utviklingsmetoden",
     "content": ". | Behov og krav - spesifisere krav som dekker behovene innen anvendelsesområdet . | Utrede - vurdere behovene og kravene identifisert i forrige fase med tanke på anvendelse, behov for gjenbruk og internasjonale spesifikasjoner . | Utvikle - utvikle områdeprofilen i samarbeid med andre aktører i sektoren . | Utprøve og evaluere - kvalitetssikre områdeprofilen . | Realisere - gjøre det områdeprofilen tilgjengelig . | Normere - beskrive hvilke deler av områdeprofilen som er normative . | . ",
     "url": "/best-practice-material/docs/no-domain-metode/metodebeskrivelse.html#fasene-i-utviklingsmetoden",
     
     "relUrl": "/docs/no-domain-metode/metodebeskrivelse.html#fasene-i-utviklingsmetoden"
-  },"100": {
+  },"101": {
     "doc": "Beskrivelse av utviklingsmetoden",
     "title": "Smidig utvikling av områdeprofiler ",
     "content": "Utviklingen av en områdeprofil vil ofte skje i sammenheng med utviklingen av programvare/tjeneste som skal løse et samhandlingsbehov. Utviklingsarbeidet vil være smidig, dvs. det vil foregå før, under og etter at hele eller deler av områdeprofilen er normert. Utvikling, test og driftssetting av programvareproduktet trenger ikke være en del av utviklingsprosjektet for områdeprofilen, men i mange tilfeller vil disse være tett sammenkoblet eller del av samme prosjekt. ",
     "url": "/best-practice-material/docs/no-domain-metode/metodebeskrivelse.html#smidig-utvikling-av-omr%C3%A5deprofiler",
     
     "relUrl": "/docs/no-domain-metode/metodebeskrivelse.html#smidig-utvikling-av-områdeprofiler"
-  },"101": {
+  },"102": {
     "doc": "Versjoner av modell",
     "title": "FHIR-modell og tjenesteversjon",
     "content": "Ved utviklingen av et FHIR RESTful API vil definisjonen og profileringen av FHIR standarden påvirke hvordan tjenesten som tilbys oppfører seg og hvordan informasjonen man henter ut eller legger inn i tjenesten skal struktureres og kodes. derfor henger FHIR modellen man definerer ved hjelp av profilering henge sammen med REST tjenesten funksjonalitet. Det er derfor viktig å dokumentere overfor konsumenter av tjenester hvordan dette fungerer og ha tydelig versjonering av tjenesten som henger sammen med FHIR modellen som ligger til grunn. Denne siden oppsummererer noen forslag til retningslinjer for dokumentasjon og versjonering av FHIR modellen. ",
     "url": "/best-practice-material/docs/IG-og-dokumentasjon/model-versioning.html#fhir-modell-og-tjenesteversjon",
     
     "relUrl": "/docs/IG-og-dokumentasjon/model-versioning.html#fhir-modell-og-tjenesteversjon"
-  },"102": {
+  },"103": {
     "doc": "Versjoner av modell",
     "title": "Dokumentasjon av tjenestene",
     "content": ". | Det skal dokumenteres hvordan den enkelte aktør kobler seg til, tester og bruker tjenesten (selvbetjeningsløsning, bruk av testinstanser, brukervilkår og krav til avtaler) | Det skal dokumenteres hvordan den enkelte aktør oppnår sikker kommunikasjon med tjenestene (formen på denne dokumentasjonen?) | Det skal dokumenteres hvordan informasjonen fra FREG og andre kilder eksponeres fra tjenesten (i form av HL7 FHIR datamodell/Implementation Guide) | Det skal dokumenteres hvilke funksjoner som eksisterer i API’et til tjenesten (i form av API dokumentasjon og CapabilityStatement) | All dokumentasjon skal inneholde endringslogg som gjør det mulig å finne ut nøyaktig hva som er endret mellom versjoner | . ",
     "url": "/best-practice-material/docs/IG-og-dokumentasjon/model-versioning.html#dokumentasjon-av-tjenestene",
     
     "relUrl": "/docs/IG-og-dokumentasjon/model-versioning.html#dokumentasjon-av-tjenestene"
-  },"103": {
+  },"104": {
     "doc": "Versjoner av modell",
     "title": "Om utviklingen av tjenester",
     "content": ". | Starte med enkle tjenester, som kan bygges ut, dvs. levere ut tjeneste slik de støttes i Serveren (dvs. minst mulig ekstra utviklingsarbeid) | Når tjenesten videreutvikles så skal nye versjoner være bakoverkompatibel i så stor grad som mulig | Tjenestene skal være så generelle som mulig slik at de dekker mange behov | API’ene skal etterleve krav spesifisert i HL7 FHIR standarden | Mer spesifikt skal API’ene etterlever kravene til FHIR RESTful API, FHIR søk og FHIR operasjoner | Det kan gjøres begrensninger i tilgjengelig funksjonalitet i forhold til dette der det er hensiktsmessig i forhold til ytelse og vedlikehold . | Eventuelle begrensninger må dokumenteres i API-dokumentasjon og CapabilityStatement | . | . ",
     "url": "/best-practice-material/docs/IG-og-dokumentasjon/model-versioning.html#om-utviklingen-av-tjenester",
     
     "relUrl": "/docs/IG-og-dokumentasjon/model-versioning.html#om-utviklingen-av-tjenester"
-  },"104": {
+  },"105": {
     "doc": "Versjoner av modell",
     "title": "Datamiminering",
     "content": ". | FHIR støtter dataminimering i form av _summary og _elements, men ikke for extensions . | (For Extensions kan det vurderes f.eks. GraphQL og det må gjøres utviklingsarbeid) | Dersom det er behov for kapabiliteter som ikke støttes av Serveren, så kan det vurderes å tilpasse egen funksjonalitet | . | Eksempelvis skreddersydde søkeparametere eller operasjoner (søk på mellomnavn er et eksempel på dette) . | Skreddersydde søkeparametere skal dokumenteres i form av SearchParameter og være definert i CapabilityStatement | Skreddersydde operasjoner skal dokumenteres i form av OperationDefinition og være definert i CapabilityStatement | . | I de tilfellene API’ene ikke etterlever krav spesifisert i HL7 FHIR skal dette dokumenteres . | Et eksempel på dette er dataminimering som hovedregel hvor det meste innholdet i den returnerte Personressursen blir returnert uten innhold med mindre klienten spesifiserer hvilke elementer som skal returneres. Dette er IKKE i henhold til FHIR RESTful API og funksjonaliteten må derfor dokumenteres spesielt | . | . ",
     "url": "/best-practice-material/docs/IG-og-dokumentasjon/model-versioning.html#datamiminering",
     
     "relUrl": "/docs/IG-og-dokumentasjon/model-versioning.html#datamiminering"
-  },"105": {
+  },"106": {
     "doc": "Versjoner av modell",
     "title": "Versjoner av modell",
     "content": " ",
     "url": "/best-practice-material/docs/IG-og-dokumentasjon/model-versioning.html",
     
     "relUrl": "/docs/IG-og-dokumentasjon/model-versioning.html"
-  },"106": {
-    "doc": "Møter i FHIR fagforum",
-    "title": "Møter i FHIR fagforum",
-    "content": "Møtene arrangeres klokken 1300-1500. | Dato | Tema | Agenda | Referat | . | 2021-06-02 | FHIR fagforum møte nr 6 | Terminologi on FHIR | Referat | . | 2021-04-21 | FHIR fagforum møte nr 5 | SMART on FHIR | Referat | . | 2021-03-10 | FHIR fagforum møte nr 4 | Behandlingsplan/CarePlan | Referat | . | 2021-01-27 | FHIR fagforum møte nr 3 | Legemidler og medikasjon | Referat | . | 2020-12-16 | FHIR fagforum møte nr 2 | Profilering og publisering | Referat | . | 2020-11-04 | FHIR fagforum møte nr 1 | Konstituerende møte | Referat | . ",
-    "url": "/best-practice-material/docs/FHIR-faglig-forum/moteplan.html",
-    
-    "relUrl": "/docs/FHIR-faglig-forum/moteplan.html"
   },"107": {
     "doc": "NamingSystem",
     "title": "NamingSystem",
