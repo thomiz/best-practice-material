@@ -1220,169 +1220,169 @@
     "doc": "FHIR fagforum møte nr 1",
     "title": "Møte i FHIR fagforum",
     "content": ". | Dato: 2020-11-04 | Klokkeslett: 1300-1400 | . FHIR fagforum (FFF) er et åpent forum om bruk og implementering av HL7 FHIR i Norge. FFF er åpent for alle. ",
-    "url": "/best-practice-material/agenda/2020-11-04-agenda.html#m%C3%B8te-i-fhir-fagforum",
+    "url": "/best-practice-material/best-practice-material/2020-11-04-agenda#m%C3%B8te-i-fhir-fagforum",
     
-    "relUrl": "/agenda/2020-11-04-agenda.html#møte-i-fhir-fagforum"
+    "relUrl": "/best-practice-material/2020-11-04-agenda#møte-i-fhir-fagforum"
   },"175": {
     "doc": "FHIR fagforum møte nr 1",
     "title": "Agenda",
     "content": ". | Velkommen og presentasjonsrunde (alle skriver i chatten hvor de kommer fra + aktuell erfaring/prosjekt) (5 min) | TNT til FFF (5 min) | Diskusjon av navn og mandat (20 min) | FHIR RESTful API (Kenneth) (20 min) | Forslag til tema og deltakelse fremover (10 min) | . ",
-    "url": "/best-practice-material/agenda/2020-11-04-agenda.html#agenda",
+    "url": "/best-practice-material/best-practice-material/2020-11-04-agenda#agenda",
     
-    "relUrl": "/agenda/2020-11-04-agenda.html#agenda"
+    "relUrl": "/best-practice-material/2020-11-04-agenda#agenda"
   },"176": {
     "doc": "FHIR fagforum møte nr 1",
     "title": "Navneforslag",
     "content": "Alle kan stemme på eller komme med egne navneforslag. Avstemning foregår i issue #52 . ",
-    "url": "/best-practice-material/agenda/2020-11-04-agenda.html#navneforslag",
+    "url": "/best-practice-material/best-practice-material/2020-11-04-agenda#navneforslag",
     
-    "relUrl": "/agenda/2020-11-04-agenda.html#navneforslag"
+    "relUrl": "/best-practice-material/2020-11-04-agenda#navneforslag"
   },"177": {
     "doc": "FHIR fagforum møte nr 1",
     "title": "Oppkobling til møte",
     "content": "Skype møte . ",
-    "url": "/best-practice-material/agenda/2020-11-04-agenda.html#oppkobling-til-m%C3%B8te",
+    "url": "/best-practice-material/best-practice-material/2020-11-04-agenda#oppkobling-til-m%C3%B8te",
     
-    "relUrl": "/agenda/2020-11-04-agenda.html#oppkobling-til-møte"
+    "relUrl": "/best-practice-material/2020-11-04-agenda#oppkobling-til-møte"
   },"178": {
     "doc": "FHIR fagforum møte nr 1",
     "title": "Kalender",
     "content": "ical møteinkalling . Påmelding er ikke nødvendig. ",
-    "url": "/best-practice-material/agenda/2020-11-04-agenda.html#kalender",
+    "url": "/best-practice-material/best-practice-material/2020-11-04-agenda#kalender",
     
-    "relUrl": "/agenda/2020-11-04-agenda.html#kalender"
+    "relUrl": "/best-practice-material/2020-11-04-agenda#kalender"
   },"179": {
     "doc": "FHIR fagforum møte nr 1",
     "title": "FHIR fagforum møte nr 1",
     "content": " ",
-    "url": "/best-practice-material/agenda/2020-11-04-agenda.html",
+    "url": "/best-practice-material/best-practice-material/2020-11-04-agenda",
     
-    "relUrl": "/agenda/2020-11-04-agenda.html"
+    "relUrl": "/best-practice-material/2020-11-04-agenda"
   },"180": {
     "doc": "FHIR fagforum møte nr 2",
     "title": "Møte i FHIR fagforum",
     "content": ". | Dato: 2020-12-16 | Klokkeslett: 1300-1500 | . FHIR fagforum (FFF) er et åpent forum om bruk og implementering av HL7 FHIR i Norge. FFF er åpent for alle. ",
-    "url": "/best-practice-material/agenda/2020-12-16-agenda.html#m%C3%B8te-i-fhir-fagforum",
+    "url": "/best-practice-material/best-practice-material/2020-12-16-agenda#m%C3%B8te-i-fhir-fagforum",
     
-    "relUrl": "/agenda/2020-12-16-agenda.html#møte-i-fhir-fagforum"
+    "relUrl": "/best-practice-material/2020-12-16-agenda#møte-i-fhir-fagforum"
   },"181": {
     "doc": "FHIR fagforum møte nr 2",
     "title": "Agenda",
     "content": "Agenda . | Velkommen og presentasjonsrunde (alle skriver i chatten hvor de kommer fra + aktuell erfaring/prosjekt) (3 min) | Informasjon om valg av navn og mandat (5 min) | Inntrykk fra FHIR Dev Days i november (Egde og Siemens Healthineers) (20 min) | Informasjon fra HL7 Norge, nye basisprofiler og videre profilering på nasjonalt nivå (Øyvind 7 min) | Kjernejournal tar i bruk modernisert folkeregister (30 min) | Profilering og publisering med Forge, SIMPLIFIER og alternativer (30 min Thomas TR/Espen SS) | Diskusjon (15 min) | Innspill til tema (3 min) | Eventuelt | . ",
-    "url": "/best-practice-material/agenda/2020-12-16-agenda.html#agenda",
+    "url": "/best-practice-material/best-practice-material/2020-12-16-agenda#agenda",
     
-    "relUrl": "/agenda/2020-12-16-agenda.html#agenda"
+    "relUrl": "/best-practice-material/2020-12-16-agenda#agenda"
   },"182": {
     "doc": "FHIR fagforum møte nr 2",
     "title": "Oppkobling til møte",
     "content": "Oppkobling via join.nhn.no Skriv navnet ditt. Møterom: vm.ehelse4320@vm.nhn.no . ",
-    "url": "/best-practice-material/agenda/2020-12-16-agenda.html#oppkobling-til-m%C3%B8te",
+    "url": "/best-practice-material/best-practice-material/2020-12-16-agenda#oppkobling-til-m%C3%B8te",
     
-    "relUrl": "/agenda/2020-12-16-agenda.html#oppkobling-til-møte"
+    "relUrl": "/best-practice-material/2020-12-16-agenda#oppkobling-til-møte"
   },"183": {
     "doc": "FHIR fagforum møte nr 2",
     "title": "Fallback løsning",
     "content": "Skype, bare som fallback hvis Virtuelt rom over ikke fungerer. Skype møte . ",
-    "url": "/best-practice-material/agenda/2020-12-16-agenda.html#fallback-l%C3%B8sning",
+    "url": "/best-practice-material/best-practice-material/2020-12-16-agenda#fallback-l%C3%B8sning",
     
-    "relUrl": "/agenda/2020-12-16-agenda.html#fallback-løsning"
+    "relUrl": "/best-practice-material/2020-12-16-agenda#fallback-løsning"
   },"184": {
     "doc": "FHIR fagforum møte nr 2",
     "title": "Kalender",
     "content": "ical møteinkalling . Påmelding er ikke nødvendig. ",
-    "url": "/best-practice-material/agenda/2020-12-16-agenda.html#kalender",
+    "url": "/best-practice-material/best-practice-material/2020-12-16-agenda#kalender",
     
-    "relUrl": "/agenda/2020-12-16-agenda.html#kalender"
+    "relUrl": "/best-practice-material/2020-12-16-agenda#kalender"
   },"185": {
     "doc": "FHIR fagforum møte nr 2",
     "title": "FHIR fagforum møte nr 2",
     "content": " ",
-    "url": "/best-practice-material/agenda/2020-12-16-agenda.html",
+    "url": "/best-practice-material/best-practice-material/2020-12-16-agenda",
     
-    "relUrl": "/agenda/2020-12-16-agenda.html"
+    "relUrl": "/best-practice-material/2020-12-16-agenda"
   },"186": {
     "doc": "FHIR fagforum møte nr 3",
     "title": "Møte i FHIR fagforum",
     "content": ". | Dato: 2021-01-27 | Klokkeslett: 1300-1500 | . FHIR fagforum (FFF) er et åpent forum om bruk og implementering av HL7 FHIR i Norge. FFF er åpent for alle. ",
-    "url": "/best-practice-material/agenda/2021-01-27-agenda.html#m%C3%B8te-i-fhir-fagforum",
+    "url": "/best-practice-material/best-practice-material/2021-01-27-agenda#m%C3%B8te-i-fhir-fagforum",
     
-    "relUrl": "/agenda/2021-01-27-agenda.html#møte-i-fhir-fagforum"
+    "relUrl": "/best-practice-material/2021-01-27-agenda#møte-i-fhir-fagforum"
   },"187": {
     "doc": "FHIR fagforum møte nr 3",
     "title": "Agenda",
     "content": ". | Velkommen og presentasjonsrunde (alle skriver i chatten hvor de kommer fra + aktuell erfaring/prosjekt) | Informasjon fra HL7 Norge (Øyvind Aassve) | Arbeid med standardisering for medisineringsfeltet internasjonalt (Espen S Seland) (10 min) | SAFEST (Stine Johansen) (30 min) | SFM (Dag Hammer og Ole Martin Winnem) (30 min) | Diskusjon (15 min) | Forslag til møteplan (5 min) | Innspill til tema (5 min) | Eventuelt | . ",
-    "url": "/best-practice-material/agenda/2021-01-27-agenda.html#agenda",
+    "url": "/best-practice-material/best-practice-material/2021-01-27-agenda#agenda",
     
-    "relUrl": "/agenda/2021-01-27-agenda.html#agenda"
+    "relUrl": "/best-practice-material/2021-01-27-agenda#agenda"
   },"188": {
     "doc": "FHIR fagforum møte nr 3",
     "title": "Oppkobling til møte",
     "content": "Oppkobling via join.nhn.no . Skriv navnet ditt. Velg Video (ikke presentasjon) . Møterom: vm.ehelse4320@vm.nhn.no . ",
-    "url": "/best-practice-material/agenda/2021-01-27-agenda.html#oppkobling-til-m%C3%B8te",
+    "url": "/best-practice-material/best-practice-material/2021-01-27-agenda#oppkobling-til-m%C3%B8te",
     
-    "relUrl": "/agenda/2021-01-27-agenda.html#oppkobling-til-møte"
+    "relUrl": "/best-practice-material/2021-01-27-agenda#oppkobling-til-møte"
   },"189": {
     "doc": "FHIR fagforum møte nr 3",
     "title": "Fallback løsning",
     "content": "Skype, bare som fallback hvis Virtuelt rom over ikke fungerer. Skype møte . ",
-    "url": "/best-practice-material/agenda/2021-01-27-agenda.html#fallback-l%C3%B8sning",
+    "url": "/best-practice-material/best-practice-material/2021-01-27-agenda#fallback-l%C3%B8sning",
     
-    "relUrl": "/agenda/2021-01-27-agenda.html#fallback-løsning"
+    "relUrl": "/best-practice-material/2021-01-27-agenda#fallback-løsning"
   },"190": {
     "doc": "FHIR fagforum møte nr 3",
     "title": "Kalender",
     "content": "ical møteinkalling . Påmelding er ikke nødvendig. ",
-    "url": "/best-practice-material/agenda/2021-01-27-agenda.html#kalender",
+    "url": "/best-practice-material/best-practice-material/2021-01-27-agenda#kalender",
     
-    "relUrl": "/agenda/2021-01-27-agenda.html#kalender"
+    "relUrl": "/best-practice-material/2021-01-27-agenda#kalender"
   },"191": {
     "doc": "FHIR fagforum møte nr 3",
     "title": "FHIR fagforum møte nr 3",
     "content": " ",
-    "url": "/best-practice-material/agenda/2021-01-27-agenda.html",
+    "url": "/best-practice-material/best-practice-material/2021-01-27-agenda",
     
-    "relUrl": "/agenda/2021-01-27-agenda.html"
+    "relUrl": "/best-practice-material/2021-01-27-agenda"
   },"192": {
     "doc": "FHIR fagforum møte nr 4",
     "title": "Møte fire i FHIR fagforum",
     "content": ". | Dato: 2021-03-10 | Klokkeslett: 1300-1500 | . FHIR fagforum (FFF) er et åpent forum om bruk og implementering av HL7 FHIR i Norge. FFF er åpent for alle. ",
-    "url": "/best-practice-material/agenda/2021-03-10-agenda.html#m%C3%B8te-fire-i-fhir-fagforum",
+    "url": "/best-practice-material/best-practice-material/2021-03-10-agenda#m%C3%B8te-fire-i-fhir-fagforum",
     
-    "relUrl": "/agenda/2021-03-10-agenda.html#møte-fire-i-fhir-fagforum"
+    "relUrl": "/best-practice-material/2021-03-10-agenda#møte-fire-i-fhir-fagforum"
   },"193": {
     "doc": "FHIR fagforum møte nr 4",
     "title": "Forslag til Agenda",
     "content": ". | Velkommen og presentasjonsrunde 5 min (alle skriver i chatten hvor de kommer fra + aktuell erfaring/prosjekt) | Informasjon om metode for utvikling av områdeprofiler 5 min (Thomas T Rosenlund) . | Dokument til kommentering, frist 12. mars | . | Informasjon fra HL7 Norge 5 min (Øyvind Aassve) | Behandlingsplan/CarePlan 30 min (Ingvar Sørlien) | Besøksplan i VKP med Careplan 15 min (Jørn Sikkerbøl) | Digitale behandlingsplaner med CarePlan 15 min (Vidar Mehti) | Diskusjon 15 min | Tarmscreening 30 min (Jon Aarbakke/Marten Smits?) | . ",
-    "url": "/best-practice-material/agenda/2021-03-10-agenda.html#forslag-til-agenda",
+    "url": "/best-practice-material/best-practice-material/2021-03-10-agenda#forslag-til-agenda",
     
-    "relUrl": "/agenda/2021-03-10-agenda.html#forslag-til-agenda"
+    "relUrl": "/best-practice-material/2021-03-10-agenda#forslag-til-agenda"
   },"194": {
     "doc": "FHIR fagforum møte nr 4",
     "title": "Oppkobling til møte",
     "content": "Oppkobling via join.nhn.no Skriv navnet ditt. Møterom: vm.ehelse4316@vm.nhn.no . ",
-    "url": "/best-practice-material/agenda/2021-03-10-agenda.html#oppkobling-til-m%C3%B8te",
+    "url": "/best-practice-material/best-practice-material/2021-03-10-agenda#oppkobling-til-m%C3%B8te",
     
-    "relUrl": "/agenda/2021-03-10-agenda.html#oppkobling-til-møte"
+    "relUrl": "/best-practice-material/2021-03-10-agenda#oppkobling-til-møte"
   },"195": {
     "doc": "FHIR fagforum møte nr 4",
     "title": "Fallback løsning",
     "content": "Skype, bare som fallback hvis Virtuelt rom over ikke fungerer. Skype møte . ",
-    "url": "/best-practice-material/agenda/2021-03-10-agenda.html#fallback-l%C3%B8sning",
+    "url": "/best-practice-material/best-practice-material/2021-03-10-agenda#fallback-l%C3%B8sning",
     
-    "relUrl": "/agenda/2021-03-10-agenda.html#fallback-løsning"
+    "relUrl": "/best-practice-material/2021-03-10-agenda#fallback-løsning"
   },"196": {
     "doc": "FHIR fagforum møte nr 4",
     "title": "Kalender",
     "content": "ical møteinkalling . Påmelding er ikke nødvendig. ",
-    "url": "/best-practice-material/agenda/2021-03-10-agenda.html#kalender",
+    "url": "/best-practice-material/best-practice-material/2021-03-10-agenda#kalender",
     
-    "relUrl": "/agenda/2021-03-10-agenda.html#kalender"
+    "relUrl": "/best-practice-material/2021-03-10-agenda#kalender"
   },"197": {
     "doc": "FHIR fagforum møte nr 4",
     "title": "FHIR fagforum møte nr 4",
     "content": " ",
-    "url": "/best-practice-material/agenda/2021-03-10-agenda.html",
+    "url": "/best-practice-material/best-practice-material/2021-03-10-agenda",
     
-    "relUrl": "/agenda/2021-03-10-agenda.html"
+    "relUrl": "/best-practice-material/2021-03-10-agenda"
   }
 }
