@@ -34,432 +34,432 @@
     
     "relUrl": "/docs/IG-og-dokumentasjon/HER-id.html#rest-kommunikasjon"
   },"5": {
-    "doc": "IG og Dokumentasjon",
-    "title": "IG og Dokumentasjon",
-    "content": "Når man tilpasser FHIR til nasjonale eller lokale forhold må endringene man gjør dokumenteres. Dette er best-practice for å dokumentere tilpasninger av FHIR. Tilpasninger av FHIR dokumenteres vanligvis som en Implmentasjonsguide, se Den gode implementasjonsguide. Det eksisterer også spesifikke retningslinjer for hvordan nasjonale områdeprofiler og nasjonale basisprofiler skal utarbeides og dokumenteres. ",
-    "url": "/best-practice-material/docs/IG-og-dokumentasjon/IG-og-dokumentasjon.html",
-    
-    "relUrl": "/docs/IG-og-dokumentasjon/IG-og-dokumentasjon.html"
-  },"6": {
     "doc": "Practitioner vs PractitionerRole",
     "title": "Practitioner vs PractitionerRole ressurser",
     "content": "I mange sammenhenger er det behov for informasjon både om organisasjon og helsepesonell i forbindelse med samhandling om en pasient. I HL7 FHIR eksisterer det minst tre muligheter for å få til dette (QR kan ikke både ha organisasjon og Practitioner i author, dette gjelder også endel andre ressurser). | legge organisasjon som en del av spørreskjema og benytte Practitioner | legge organisasjon som en del av PractitionerRole | legge organisasjon som selvstendig organisasjonsinformasjon i en Organization | For QuestionnaireResponse kan det også vurderes om organisasjonsinformasjon kan legges som svar på spørsmål (altså QR.answer) der organisasjonsinformasjonen kun er tilleggsinformasjon og ikke en sentral del av ansvarsforholdet i rapporteringen. | . Organisasjonsinformasjon i tillegg til Helseperson/lege informasjon skaper ofte utfordringer når vi skal ta i bruk FHIR. Det finnes flere måter å løse dette på avhengig av hvilken type rolle/organisasjonsinformasjon løsningen trenger. | Når helsepersonen er juridisk ansvarlig for innholdet i rapporteringen og denne skal identifiseres med en kjent identifikator (for eksempel der du vet at det finnes en HPR identifikator) kan Practitioner benyttes | Når helsepersonen rapporterer i form av sin rolle for en organisasjon er PractitionerRole riktig ressurs | Det finnes randsoner mellom disse hvor det kan være nyttig å knytte organisasjonstilhørighet til Helsepersonen for en bestemt rapportering fordi det er bestemte behov i løsningen som gjør det ønskelig å ha tilgang til hvilke roller en helseperson har inntatt tidligere når løsningen er benyttet | . ",
     "url": "/best-practice-material/docs/IG-og-dokumentasjon/Practitioner-PractitionerRole.html#practitioner-vs-practitionerrole-ressurser",
     
     "relUrl": "/docs/IG-og-dokumentasjon/Practitioner-PractitionerRole.html#practitioner-vs-practitionerrole-ressurser"
-  },"7": {
+  },"6": {
     "doc": "Practitioner vs PractitionerRole",
     "title": "Practitioner vs PractitionerRole",
     "content": " ",
     "url": "/best-practice-material/docs/IG-og-dokumentasjon/Practitioner-PractitionerRole.html",
     
     "relUrl": "/docs/IG-og-dokumentasjon/Practitioner-PractitionerRole.html"
-  },"8": {
+  },"7": {
     "doc": "Bruk av QuestionnaireResponse",
     "title": "Bruk av QuestionniareResponse",
     "content": "QuestionnaireResponse kan benyttes til å hente inn mange forskjellige typer informasjon i form et FHIR grensesnitt, gjerne i sammenheng med bruk av Questionnaire for å uttrykke bestemte måter sluttbrukeren skal svare på konkrete spørsmål. Fordelen med å benytte QuestionnaireResponse er at man kan støtte alle mulige informasjonselementer og definere disse opp helt fritt fra FHIR modellen. Denne fleksibiliteten er viktig men krever også at løsninger bare benytter QuestionnaireResponse der det ikke er naturlig å benytte andre ressurser. Spesielt vil QuestionnaireResponse ha overlappende scenarier med bruk av Medications, Summary og Diagnostic ressurser som i prinsippet kan benyttes til å hente inn informasjon om pasienten om alt fra medisinering til oppsummerende informasjon om behandling og alle typer observasjoner og diagnoser. I tilfeller hvor man vurderer bruk av QuestionnaireResponse/Questionnaire må man derfor vurdere om det er andre ressurser som er mer naturlig å benytte for brukerhistorien. I korte trekk er det slik at Questionnaire/QuestionnaireResponse bare skal benyttes der informasjonsinnhentingen faktisk er et typisk spørreskjema scenario, med predefinerte spørsmål og predefinert innhold i svaret. I alle tilfeller hvor informasjonen eksisterer i systemet eller skal populeres fra andre kilder vil andre ressurser eller kombinasjoner av disse være det riktige valget. Andre viktige avklaringer som må gjøres når man vurderer løsning for bruk av spørreskjema er: . | Ren FHIR REST API tilnærming | Benytte mer spesialiserte operasjoner eller søk (skreddersydde operations/searchparameters) | Benytte Bundles med sterke krav til innhold | Benytte definerte meldinger/dokumenter for rapportering | . ",
     "url": "/best-practice-material/docs/IG-og-dokumentasjon/QuestionnaireResponse.html#bruk-av-questionniareresponse",
     
     "relUrl": "/docs/IG-og-dokumentasjon/QuestionnaireResponse.html#bruk-av-questionniareresponse"
-  },"9": {
+  },"8": {
     "doc": "Bruk av QuestionnaireResponse",
     "title": "Bruk av QuestionnaireResponse",
     "content": " ",
     "url": "/best-practice-material/docs/IG-og-dokumentasjon/QuestionnaireResponse.html",
     
     "relUrl": "/docs/IG-og-dokumentasjon/QuestionnaireResponse.html"
-  },"10": {
+  },"9": {
     "doc": "Versjoner av API",
     "title": "Grunnprinsipper",
     "content": "Vi versjonerer på URL. Domenenavn og ressurs vil være det samme for nytt og gammelt API, men versjonsnummer (siste parameter i URL) vil differensiere versjon. VIKTIG DISTINKSJON: Vi kan ikke bryte API-kontrakten med konsumentene for Minor og Errata. Dette leses under fra føringene for utforming av eksterne API for Grunndata-tjenester / Persontjenesten: . Begrepet “non-breaking-changes” betegner endringer i grensesnittet (API funksjonalitet) eller FHIR datamodell som kan konsumeres av en eksisterende klient uten at klienten gjør endringer på sin implementasjon . | Ved ny versjon av et eksisterende API (Minor/Errata) - endres backend i API-konfigurasjonen i Azure API Management (ny versjon av API på ny pod, gammel pod/image beholdes temporært for å sikre rollback-muligheter) | Vi godtar samme bearer-token fra HelseID | Kontrakten opprettholdes med konsumentene (ellers er det ikke en Minor/Errata) | Vi får på denne måten overført samtlige klienter til nyeste versjon, uten at de trenger å gjøre endringer på sin side (dette følges av føringene i kapittelet under - parafrasert: “ny funksjonalitet medfører ikke krav til å bruke den”) | Gammel “Minor/Errata” versjon tidsbegrenses IKKE, den ruller KONTINUERLIG videre med kort bakoverkompatibilitet / rollback-mulighet | Ved Major - endringer som må anses som “breaking changes” og potensielt bryter bakoverkompatibilitiet, legges det opp ny versjon i Microsoft Azure API Management | Vi krever et eget audience og scope i bearer-token for ny versjon | Ny versjon gis versjonsnummer iht nummereringsstandard (marketing/arkitekt?) | API versjoneres på URL (path) | . https://eksempelapi.helsepunkt.no/persontjenesten/v2 . Konsumenter varsles om at API må byttes fra gammelt til nytt API hos konsument innen gitt grace-period (eksempelvis “12 måneder fra nytt API oppstår”) Gammelt API tidsbegrenses etter spesifikasjon fra API-eier Det må bestemmes om noen versjon av et API skal ha forlenget levetid, eksempelvis første versjon Nytt API skal gå gjennom tre faser: Innfasing - “Produksjon” - Utfasing . ",
     "url": "/best-practice-material/docs/IG-og-dokumentasjon/api-versions.html#grunnprinsipper",
     
     "relUrl": "/docs/IG-og-dokumentasjon/api-versions.html#grunnprinsipper"
-  },"11": {
+  },"10": {
     "doc": "Versjoner av API",
     "title": "API Versjoner i produksjon",
     "content": ". | Det vil til enhver tid til være minst 3 versjoner av et API tilgjengelig, som tegningen over viser | Dersom endring skjer i kontrakten, som medfører breaking change / Major versioning, så må versjon fremskyndes. | Tegningen tar høyde for ny versjon per år - må kun anses som eksempel og skal ikke være styrende. API-eier bestemmer release cycle. | Det er en forutsetning at EPJ-leverandører utvikler løsning for å kunne konsumere nytt API, og inkluderer i sin årlige patch/release av EPJ-systemet | Dette fordrer en dialog mellom kunde/MF Helse/EPJ leverandør | . ",
     "url": "/best-practice-material/docs/IG-og-dokumentasjon/api-versions.html#api-versjoner-i-produksjon",
     
     "relUrl": "/docs/IG-og-dokumentasjon/api-versions.html#api-versjoner-i-produksjon"
-  },"12": {
+  },"11": {
     "doc": "Versjoner av API",
     "title": "Endringer og versjonering",
     "content": "Endringer i API kan forårsakes av et utall forskjellige grunner, som er vanskelig å forutse uten erfaringsbase. Enkelte er lette å identifisere som Major (slik som “Erstatte FHIR server), mens feilretting av datamodellen kan utløse Major/Minor/Errata. Endringer i API må/bør gå gjennom et changeboard (ref. ITIL) som avgjør hvilken type endring som skal adresseres, og hva slags impact dette vil ha. Major-versjoner trenger ikke nødvendigvis følge FHIR-versjoner (merk - det er ikke en 1:1 relasjon mellom FHIR-versjon og API-versjon - eventuelle like versjonsnummer er å anse som tilfeldigheter): . Potensielle endringer som kan/vil forårsake major/minor/errata (ikke detaljert): . | Nye data / Ny datakilde | Feilretting i datamodellen | Feiltolkning av data | Det vi fikk var noe annet enn det vi trodde vi skulle få | Oppgradering av Vonk-versjonen, f.eks. fra 3.1.1 til 3.1.3 (skrevet april 2020, kan være fullstendig utdatert når dette leses) | Erstatte FHIR-server, f.eks. fra Fire.ly Vonk til Microsoft FHIR-server | Definere nye FHIR-profiler på errata-nivå, f.eks. fra v4.0.0 til v4.0.1 | Release nye versjoner av Vonk-plugins (dataminimerings- og autentiserings plugins) som kan påvirke funksjonaliteten for sluttkonsumentene | . ",
     "url": "/best-practice-material/docs/IG-og-dokumentasjon/api-versions.html#endringer-og-versjonering",
     
     "relUrl": "/docs/IG-og-dokumentasjon/api-versions.html#endringer-og-versjonering"
-  },"13": {
+  },"12": {
     "doc": "Versjoner av API",
     "title": "Versjoner av API",
     "content": " ",
     "url": "/best-practice-material/docs/IG-og-dokumentasjon/api-versions.html",
     
     "relUrl": "/docs/IG-og-dokumentasjon/api-versions.html"
-  },"14": {
+  },"13": {
     "doc": "Bakgrunn",
     "title": "Bakgrunn",
     "content": " ",
     "url": "/best-practice-material/docs/no-domain-metode/bakgrunn.html",
     
     "relUrl": "/docs/no-domain-metode/bakgrunn.html"
-  },"15": {
+  },"14": {
     "doc": "Bakgrunn",
     "title": "Strategisk retning innen normering",
     "content": "Internasjonale standarder og internasjonalt samarbeid om e-helse er og vil bli mer aktuelt i fremtiden. Direktoratet for e-helses rapport Utviklingstrekk 2020 peker på at utfordringer innen helsesektoren er sammenfallende for flere land og at det er viktig å være med i internasjonalt standardiseringsarbeid for å utvikle, lære og bidra til felles løsninger. Direktoratet for e-helse har tidligere utarbeidet Strategi for e-helsestandarder 2018-2022 med de tre fokusområdene nasjonal styring, standardisert informasjonsinnhold og internasjonale standarder. Veikart og planer for e-helsestandarder følger opp strategien gjennom å beskrive tiltak innenfor internasjonale standarder for datadeling og dokumentdeling. ",
     "url": "/best-practice-material/docs/no-domain-metode/bakgrunn.html#strategisk-retning-innen-normering",
     
     "relUrl": "/docs/no-domain-metode/bakgrunn.html#strategisk-retning-innen-normering"
-  },"16": {
+  },"15": {
     "doc": "Bakgrunn",
     "title": "Direktoratets anbefalinger",
     "content": "I 2019 ble det utgitt retningslinje hvor direktoratet anbefaler bruk av FHIR for datadeling. Samme år ble også 13 FHIR basisprofiler utviklet i samarbeid mellom sektor, HL7 Norge, og Direktoratet for e-helse normert som anbefalt standarder i referansekatalogen. Det er også arbeidet med prinsipper og tiltak for nasjonal styring og forvaltning av FHIR. FHIR er en viktig standard som nå tas i bruk i mange sammenhenger, og arbeidet med denne vil også fungere som utprøvingsarena for prosesser, rutiner og koordinering med andre internasjonale standarder. ",
     "url": "/best-practice-material/docs/no-domain-metode/bakgrunn.html#direktoratets-anbefalinger",
     
     "relUrl": "/docs/no-domain-metode/bakgrunn.html#direktoratets-anbefalinger"
-  },"17": {
+  },"16": {
     "doc": "Bakgrunn",
     "title": "Metodegrunnlag",
     "content": "Forslaget til metode bygger i hovedsak på eksisterende metoder innen normering, arkitektur og programvareutvikling. Smidig tilnærming . Det er et ønske om å modernisere hvordan programvareutviklingen og normeringen blir gjennomført i helsesektoren. Det er et mål at normeringsaktiviteter i større grad er basert på dokumenterte behov i sektoren, og hvor sektoren er motivert til å delta i normeringsarbeidet både i standardiseringsorganisasjoner (som HL7 Norge) og i samarbeid med Direktoratet for e-helse. Dette betyr at normeringsarbeidet må henge sammen med utviklingsprosjekter i sektoren og følge en smidig tilnærming hvor normeringsproduktene leverer verdi til sektor underveis i utviklingsløpet og blir videreutviklet og komplettert i videre iterasjoner. Figur Smidig utviklingsmetode . Smidig tilnærming betyr at normeringsproduktene eller deler av disse må utvikles, testes og settes i drift i løpet av en sprint slik at man kan evaluere hvordan produktet fungerer i praksis. Dette vil vanligvis være avhengig av at normeringsaktiviteten er koblet til en utviklingsaktivitet. Forvaltningsmodellen . Forvaltningsmodell for normerende produkter beskriver hvordan Direktoratet for e-helse skal utvikle og forvalte normerende produkter. Metode for HL7 FHIR områdeprofiler beskriver hvordan utviklingen av områdeprofiler forholder seg til forvaltningsmodellen og omvendt. Figur Fasene i forvaltningsmodellen . HL7 FHIR utviklingsmetode . HL7 International benytter i utviklingen av HL7 FHIR selv en form for iterativ metode. Standarden blir normert over flere år og det er i skrivende stund bare deler av standarden som anses som normativ. I utviklingen av en metode for områdeprofiler er det derfor naturlig å gjenbruke de samme mekanismene for standardisering som HL7 benytter i utviklingen av FHIR, blant annet maturity model. Profileringsnivåer for HL7 FHIR i Norge . I Norge arbeides det med profilering av HL7 FHIR på flere grader av detaljering. Øverst i det norske profileringshierarkiet har vi norske basisprofiler som skal sammenfatte omforente krav til hvordan FHIR ressurser skal benyttes i Norge uavhengig av anvendelsesområde. Disse profilene er åpne og inneholder bare det alle aktører er enige om med hensyn til koding og navngivning av ressurser og navnerom. De norske områdeprofilene er ment som et profileringsnivå under basisprofilene og har som formål å presisere bruk av HL7 FHIR innen et bestemt anvendelsesområde. Prosjekter og implementasjoner kan deretter velge å profilere implementerte profiler knyttet til en konkret implementasjon. Disse kan inneholde spesifikke krav som bare gjelder innenfor en virksomhet. Figur Profileringshierarki for HL7 FHIR i Norge . Prosjektveiviseren . Metoden baserer seg på Digitaliseringsdirektoratets veileder for bruk av smidig metode for programvareutvikling, Prosjektstyring og smidig utviklingsmetodikk. Digitaliseringsdirektoratets veileder beskriver hvordan smidig kan benyttes i alle prosjektets faser og beskriver eksempler på epos og hvordan de forskjellige fasene i prosjektmodellen kan deles inn i flere sprinter/iterasjoner. Figur Smidig utviklingsmetode Digitaliseringsdirektoratet . ",
     "url": "/best-practice-material/docs/no-domain-metode/bakgrunn.html#metodegrunnlag",
     
     "relUrl": "/docs/no-domain-metode/bakgrunn.html#metodegrunnlag"
-  },"18": {
+  },"17": {
     "doc": "Behov og krav",
     "title": "Behov og krav",
     "content": " ",
     "url": "/best-practice-material/docs/no-domain-metode/behov-og-krav.html",
     
     "relUrl": "/docs/no-domain-metode/behov-og-krav.html"
-  },"19": {
+  },"18": {
     "doc": "Behov og krav",
     "title": "Hovedmål: Spesifisere krav som dekker behovene innen anvendelsesområdet",
     "content": ". | Beskrive anvendelsesområdet (use case) . | Bakgrunn og problemstilling | Behov for samhandling | . | Spesifisere krav til samhandlingen | Planlegge, prioritere og dokumentere behov og krav | . Behovene for områdeprofiler identifiseres hovedsakelig av virksomhetene i sektoren. En viktig oppgave i denne fasen er å beskrive anvendelsesområdet og problemstillingen områdeprofilene kan løse. Beskrivelsen ligger til grunn for gjenbruk av andre. Når behov og krav beskrives er det spesielt viktig å beskrive behov for informasjonsutveksling og elektronisk samhandling. Kravene som spesifiseres for profilene og implementasjonsguiden må dekke behovene som er identifisert for anvendelsen. I de fleste tilfeller er det behov for å forankre arbeidet med flere aktører i sektoren samt HL7 Norge og Direktoratet for e-helse. For at et sett med områdeprofiler skal utvikles må behovene drøftes med flere parter for å sannsynliggjøre at behovene er felles for sektoren og ikke bare gjelder én aktør. Ved iterativ gjennomføring vil fasen gjentas flere ganger. Hovedformålet blir da å prioritere og beskrive behovene og kravene til oppgavene som skal gjennomføres i denne iterasjonen. ",
     "url": "/best-practice-material/docs/no-domain-metode/behov-og-krav.html#hovedm%C3%A5l-spesifisere-krav-som-dekker-behovene-innen-anvendelsesomr%C3%A5det",
     
     "relUrl": "/docs/no-domain-metode/behov-og-krav.html#hovedmål-spesifisere-krav-som-dekker-behovene-innen-anvendelsesområdet"
-  },"20": {
+  },"19": {
     "doc": "Bruk av metoden",
     "title": "Bruk av metoden",
     "content": "Metoden som er beskrevet kan anvendes smidig gjennom kontinuerlige iterasjoner og det er forventet at metoden må tilpasses etter behov i det enkelte utviklingsprosjekt. Metoden må tilpasses utviklingsprosjektet avhengig av prosjektets størrelse og kompleksitet. Det må vurderes om det skal utvikles dokumentasjon som skal testes av eksterne programvareprodukter, eller om prosjektet også skal inkludere utvikling av programvare som skal ta profilene i bruk. Slike valg vil påvirke innhold og detaljeringsnivå i de forskjellige fasene metoden beskriver. ",
     "url": "/best-practice-material/docs/no-domain-metode/bruk-av-metoden.html",
     
     "relUrl": "/docs/no-domain-metode/bruk-av-metoden.html"
-  },"21": {
+  },"20": {
     "doc": "Bruk av metoden",
     "title": "Iterativ bruk av metoden",
     "content": "Metoden er beskrevet for at det skal være enkelt å benytte flere iterasjoner ved gjennomføringen av et prosjekt. Ved iterativ tilnærming må resultatet av realiseringen i forrige iterasjon legge grunnlaget for arbeidet i neste iterasjon, som vist i figuren: . Figur Iterativ tilnærming til områdeprofilering . I fasen «behov og krav» er det fokus på å styre aktiviteten i riktig retning basert på erfaringer fra tidligere iterasjoner. Erfaringsmessig kan både behov og krav endres basert på erfaringer som gjøres underveis i utviklingsarbeidet. Endringer i behov og krav vil påvirke spesifikasjon og det ferdig implementerte produktet. Fasen må også inneholde en prioriteringsaktivitet, hvor oppgaver som skal løses i neste iterasjon/sprint diskuteres og arbeidet i neste iterasjon planlegges. De forskjellige iterasjonene kan ha fokus på hele eller deler av modellen. I en kravfase kan man for eksempel ha stort fokus på behov, krav og utvikling av kravspesifikasjon og profiler. I en realiseringsfase fokuserer prosjektet på å klargjøre kravbeskrivelsen for implementasjon og har fokus på testing og realisering av løsningen som skal tilby funksjonaliteten som tilfredstiller kravene. ",
     "url": "/best-practice-material/docs/no-domain-metode/bruk-av-metoden.html#iterativ-bruk-av-metoden",
     
     "relUrl": "/docs/no-domain-metode/bruk-av-metoden.html#iterativ-bruk-av-metoden"
-  },"22": {
+  },"21": {
     "doc": "Bruk av metoden",
     "title": "Modenhetsnivå og normeringsnivå",
     "content": "Metoden for områdeprofiler tar i bruk modenhetsnivå og normeringsnivå for å muliggjøre iterativ utvikling av normerende produkter. Normeringsnivåene definert i forvaltningsmodellen gjør det mulig å utvikle normerte produkter med lavere normeringsnivå som siden kan utvikles til retningslinjer og anbefalte/obligatoriske standarder når aktørene får erfaringer fra implementasjon og bruk. Modenhetsnivåene definert av HL7 International beskriver kategorier av modenhet til enkeltartefakter i en spesifikasjon. Modenhetsnivåene definerer hvilke krav til erfaring og implementasjon som kjennetegner hvert nivå og synliggjør nivået av erfaring knyttet til hvert enkelt artefakt i implementasjonsguiden. Metoden beskriver også hvilket modenhetsnivå som kreves for å publisere et normerende produkt på et gitt normeringsnivå. Bruk av normeringsnivå (for områdeprofiler) . Figur Normeringsnivå definert av e-helse . Direktoratet for e-helse publiserer normerende produkter innenfor fire definerte normeringsnivå. Nivåene er definert ut fra krav til kvalitetssikring, forankring og kunnskapsgrunnlag for produktet. Det er naturlig at normeringen av områdeprofiler gjennomføres i henhold til de definerte normeringsnivåene. Normeringsnivåene og kravene til normerende produkter som skal falle inn under de forskjellige nivåene er beskrevet i forvaltningsmodellen for normerende produkter. For områdeprofilene vil betydningen av normeringsnivåene være: . Veileder: En områdeprofil som er publisert som veileder betyr at virksomheter og prosjekter som utvikler eller anskaffer løsninger hvor anvendelsesområdet faller helt eller delvis innenfor en eller flere områdeprofiler bør vurdere å benytte de publiserte områdeprofilene for samhandlingsløsninger. Retningslinje: En områdeprofil som er publisert som retningslinje betyr at de delene av løsningen hvor anvendelsesområdet faller helt eller delvis innenfor omfanget av en eller flere områdeprofiler skal følge disse. Det kan aksepteres at ved særlige og godt begrunnede omstendigheter kan løsninen se bort fra krav spesifisert i noen deler av områdeprofilen. Anbefalt standard: En områdeprofil som er publisert som anbefalt standard betyr at løsninger i tilknytning til det definerte anvendelsesområdet skal benytte standarden med mindre særskilte omstendigheter kan begrunne et avvik. Obligatorisk standard: En områdeprofil som er publisert som obligatorisk standard er bindenden normer hjemlet i forskrift. En obligatorisk standard skal følges med mindre det er gitt unntak med hjemmel i forskriften. En løsning hvor deler av anvendelsesområdet faller inn under det definerte området må derfor følge standarden eller søke om unntak fra forskriften. Krav til modenhetsnivå for områdeprofiler . HL7 International benytter modenhetsnivå for å angi hvor godt en del av standarden er testet og utprøvd. I forbindelse med utarbeidelse og normering av områdeprofiler skal modenhetsnivåer benyttes for å angi hvordan de forskjellige delene av områdeprofilen (typisk definerte profiler og utvidelser) er utprøvd i praktisk bruk. Modenhetsnivået for hvert artefakt defineres som en del av implementasjonsguiden. Kartlegging og vedlikehold av modenhetsnivå . For å kartlegge hvilket modenhetsnivå et artefakt har må aktøren som forvalter artefaktet kartlegge hvordan denne er implementert, testet og tatt i bruk i egen organisasjon og av andre aktører. Det anbefales at kartleggingen gjennomføres i samarbeid med HL7 Norge og Direktoratet for e-helse. Etter hvert som områdeprofilen utvikles og tas i bruk av flere aktører vil modenhetsnivået øke. Dette signaliserer at flere virksomheter har gjennomført flere implementasjoner og har profilene i test og drift slik at profilene har oppnådd høyere modenhet. Modenhetsnivå for norske områdeprofiler . Beskrivelsen av modenhetsnivå for de norske områdeprofilene bygger på HL7 International sine modenhetsnivå men er en omskrivning av disse for norske forhold. | Modenhetsnivå | Beskrivelse | Normeringsnivå (anbefalt) | . | Draft (0) | Dokumentasjon og definisjon av artefaktet er publisert på egnet plattform og kan leses av andre virksomheter. | Kan ikke normeres | . | 1 | PLUS artefaktet produserer ikke feil eller advarsler under byggeprosessen og er vurdert som klar for implementasjon. Ressursene, implementasjonsguidene og profilene inneholder dokumentasjon på hvordan samhandlingen skal løses. | Veileder | . | 2 | PLUS artefaktet er testet og støtter den beskrevne brukerhistorien for samhandling. Testingen er gjennomført med minst to separate systemer og omfatter størstedelen av kjerneelementene som er nødvendig for samhandlingen. | Veileder | . | 3 | PLUS artefaktet er verifisert i henhold til definert beste praksis i Norge. Det skal være registrert minst 10 implementasjons kommentarer registrert fra minst 3 virksomheter og som resulterte i minst en endring av artefaktet. | Retningslinje | . | 4 | PLUS artefaktet er testet for alle spesifiserte anvendelser som er behandlet i Teknisk Styringskomite. Flere prosjekter og systemer har implementert profilen. Artefaktet er vurdert som tilstrekkelig stabil til at de som har implementert profilen må konsulteres før ikke-kompatible endringer gjennomføres | Retningslinje. | . | 5 | Artefaktet er implementert i minst 3 selvstendige produksjonssystemer. | Anbefalt standard | . | Normative | Artefaktet er stabil og er normert i henhold til HL7 Norge og Direktoratet for e-Helse sin normeringsprosess. | Anbefalt eller forskriftsfestet standard | . Flere av modenhetsnivene krever at det er gjennomført forankring og sendt informasjon til HL7 Norge og Direktoratet for e-helse. Enkelt-artefakter innen en Implementasjonsguide kan ha forskjellige modenhetsnivå, en IG som skal normeres må minst inneholde artefakter av nødvendig modenhet for å normeres på et gitt normeringsnivå. ",
     "url": "/best-practice-material/docs/no-domain-metode/bruk-av-metoden.html#modenhetsniv%C3%A5-og-normeringsniv%C3%A5",
     
     "relUrl": "/docs/no-domain-metode/bruk-av-metoden.html#modenhetsnivå-og-normeringsnivå"
-  },"23": {
+  },"22": {
     "doc": "Bruk av metoden",
     "title": "Kravkategorier",
     "content": "European Interoperability Framework 2.0 (EIF) viser hvilke lag som må på plass for å oppnå samhandlingsevne. Det kan finnes norske og internasjonale krav som skal eller bør følges når man utvikler en områdeprofil og implementasjonsguide. Dette skal kartlegges som en del av fasen Utrede. Se også Rammeverk for digital samhandling hos Digitaliseringsdirektoratet om EIF. Figur Rammeverk for digital samhandling . Juridisk samhandlingsevne . Finnes det juridiske krav til samhandlingen? Juridiske krav kan omhandle og legge føringer for alle underliggende lag. Eksempel er krav om foreldresamtykke for barn under 16 år ved henvisning til spesialisthelsetjeneste, jamfør pasient- og brukerrettighetsloven § 4-4 første ledd. Dokumentasjonen bør beskrive hvordan juridiske relevante krav er ivaretatt. Organisatorisk samhandlingsevne . Baserer anvendelsen seg på en allerede dokumentert forretningsprosess? Skal den svare ut et identifisert samhandlingsområde? Eksempel er veiledere fra Helsedirektoratet og prosessbeskrivelse for E-resept. Dokumentasjonen skal inneholde en beskrivelse av anvendelsen, og skal referere eller gjengi eventuelle dokumenterte forretningsprosesser hvis de er lagt til grunn. I andre tilfeller må forretningsprosessen dokumenteres som en del av behov og krav arbeidet i prosjektet. Semantiske samhandlingsevne . Områdeprofilene vil ofte basere seg på eksisterende informasjonsmodeller og kodeverk/terminologi. Forretningsprosessen over vil også kunne gi bestemte krav til informasjonen som skal utveksles. Eksempler er HL7 FHIR (implisitt), IPS, IDMP, OpenEHR Archetypes, SNOMED CT og ICPC-2. Dokumentasjonen skal angi hvilke semantiske standarder eller spesifikasjoner som ligger til grunn. Den bør også beskrive hvordan kravene i informasjonsmodellen er ivaretatt av områdeprofilen. Teknisk samhandlingsevne . Områdeprofiler er i størst mulig grad agnostiske med tanke på teknisk utveksling. HL7 FHIR har spesifisert noen tekniske krav til utveksling i form av bruken av JSON/XML og hvordan REST tjenester implementeres av standarden. Spesielle krav til teknisk samhandlingsevne utover de som er dokumentert i HL7 FHIR standarden må dokumenteres som en del av løsningsbeskrivelsen, men vil ikke være en naturlig del av områdeprofilen. ",
     "url": "/best-practice-material/docs/no-domain-metode/bruk-av-metoden.html#kravkategorier",
     
     "relUrl": "/docs/no-domain-metode/bruk-av-metoden.html#kravkategorier"
-  },"24": {
+  },"23": {
     "doc": "Bruk av metoden",
     "title": "Områder",
     "content": "Et sentralt konsept i forbindelse med områdeprofilering i HL7 FHIR definisjonen av områdene som en områdeprofil skal virke innenfor. Vi foreslår to rammeverk som bør benyttes for å kategorisere og beskrive områdene for områdeprofilering. Samhandlingsområder . I arkitekturarbeidet eksisterer det flere rammeverk for å kategorisere og beskrive ulike områder for samhandling. Produsenter av områdeprofiler må kunne beskrive hvilket samhandlingsområde anvendelsen sorterer innenfor og beskrive sammenhengen med andre samhandlingsområder. Samhandlingsområdet beskrives i implementasjonsguiden. Figur Kategorier av samhandlingsområder . FHIR composition framework . HL7 FHIR standarden kategoriserer ressursene og deler disse inn i en lagdelt struktur kalt FHIR Composition Framework. En slik inndeling gir informasjon om ressurser som er nært beslektet og derfor bør vurderes for områdeprofilering innen et gitt samhandlingsområde. Figur FHIR Composition Framework - kategorier og lagdeling av FHIR ressurser . Områdeprofiler bør plasseres i FHIR Composition Framework og forklare hvorfor nettopp dette settet med ressurser benyttes for å løse samhandlingen innen området. Det må også forklares hvordan området relaterer seg til andre nærliggende og beslektede områder. ",
     "url": "/best-practice-material/docs/no-domain-metode/bruk-av-metoden.html#omr%C3%A5der",
     
     "relUrl": "/docs/no-domain-metode/bruk-av-metoden.html#områder"
-  },"25": {
+  },"24": {
     "doc": "Kodeverk",
     "title": "Kodeverk",
     "content": " ",
     "url": "/best-practice-material/docs/profilering/codesystem.html",
     
     "relUrl": "/docs/profilering/codesystem.html"
-  },"26": {
+  },"25": {
     "doc": "Kodeverk",
     "title": "Introduksjon",
     "content": "En informasjonsmodell i FHIR vil ha både kodede og ikke-kodede informasjonselementer. Et kodet informasjonselement krever en kodet verdi hvor verdien må være et av et sett av forhåndsdefinerte koder fra et kodeverk. Det kan for eksempel være en kode for en diagnose, en kode for et legemiddel i en forskrivning, pasientens kjønn eller observerte symptomer ved en allergisk reaksjon. I FHIR kalles dette settet av lovlige koder for et kodet informasjonselement for et verdisett (ValueSet). Kodene i et verdisett hentes fra et kodeverk eller en terminologi (CodeSystem). Terminologibinding definerer nettopp hvilke koder som er tillatt å bruke i et kodede informasjonselementet i en informasonsmodell. FHIR har en terminlogimodul som definerer forholdet mellom de sentrale ressursene anvendt for terminologibinding. FHIR terminology-module . I norsk helsesektor har vi definert alle relevante kodeverk som benyttes i elektronisk samhandling på volven.no. På Volven er alle kodeverk identifisert med OID og kodeverdiene i alle kodeverk som forvaltes av Direktoratet for e-helse er listet opp, med unntak av store kodeverk som har sine egne datakilder. I FHIR sammenheng er dette problematisk siden FHIR servere og klienter ikke har noe brukbart grensesnitt for å hente ut kodeverk i form av CodeSystem eller valueset . ",
     "url": "/best-practice-material/docs/profilering/codesystem.html#introduksjon",
     
     "relUrl": "/docs/profilering/codesystem.html#introduksjon"
-  },"27": {
+  },"26": {
     "doc": "Kodeverk",
     "title": "CodeSystem",
     "content": "CodeSystem ressursen benyttes til å definere kodene som hører sammen i ett kodeverk i FHIR. En stor fordel med å definere opp kodeverken sine ved hjelp av CodeSystem er at det gjør det mulig å validere FHIR ressurser basert på kodene i kodeverket. Codesystem i spesifikasjonen . Defines a set of codes with meanings (also known as enumeration, terminology, classification, and/or ontology) . Eksempler på CodeSystem definert opp i forbindelse med velferdsteknologisk knutepunkt: . | vkp-emergency-level | vkp-medicationdispense-events | . ",
     "url": "/best-practice-material/docs/profilering/codesystem.html#codesystem",
     
     "relUrl": "/docs/profilering/codesystem.html#codesystem"
-  },"28": {
+  },"27": {
     "doc": "Kodeverk",
     "title": "ValueSet (aka verdisett)",
     "content": "ValueSets ressursen benyttes til å definere opp subsett eller samensetning av koder i et kodeverk (CodeSystem) som skal benyttes i en profil eller ressurs. ValueSets benyttes foreksempel i forbindelse med profilering for å angi hvilke koder fra hvilke kodeverk som skal benyttes i profilen. Ved bruk av ValueSet kan et informasjonselement bindes mot alle kodene i et kodeverk for fra Volven, eller mot et større kodeverk som ICD-10 (diagnoser) eller NCMP (prosedyrer). Et verdisett kan også inneholde kun et subsett av koder som finnes i et kodeverk – det er spesielt aktuelt ved bruk av terminologien SNOMED CT som inneholder ca 450 000 begreper og inkluderer alt fra anatomiske lokasjoner, prosedyrer, diagnoser til administrative koder og landkoder. Da er det en funksjonell/ klinisk oppgave å identifisere nøyaktig hvilke koder som skal være med i et slikt verdisett. Et verdisett kan også kombinere kodeverdier fra ulike kodeverk og terminologier som lovlige verdier i bindingen mot et informasjonselement. ValueSet i spesifikasjonen . Selects a set of codes from those defined by one or more code systems . Eksempler på ValueSets definert opp i forbindelse med velferdsteknologisk knutepunkt: . | vkp-emergency-level | vkp-medicationdispense-events | . ",
     "url": "/best-practice-material/docs/profilering/codesystem.html#valueset-aka-verdisett",
     
     "relUrl": "/docs/profilering/codesystem.html#valueset-aka-verdisett"
-  },"29": {
+  },"28": {
     "doc": "Kodeverk",
     "title": "Bruk av kodeverk",
     "content": "Kodeverk kan brukes i flere elementer i FHIR. Typisk eksempel er i Idenfifier, CodeableConcept og alle ressurser som benytter disse element-typene. Kodeverk benyttes i utgangspunktet likt i disse elementene, men angivelsen av kodeverk kan benytte flere forskjellige metoder som vi skal gå igjennom her. ",
     "url": "/best-practice-material/docs/profilering/codesystem.html#bruk-av-kodeverk",
     
     "relUrl": "/docs/profilering/codesystem.html#bruk-av-kodeverk"
-  },"30": {
+  },"29": {
     "doc": "Kodeverk",
     "title": "Kodeverk fra Volven.no",
     "content": "Alle kodeverk på Volven.no er identifisert ved en OID. Se Bruk av identifikatorer i helsesektoren og OID identifikatorserier i helse- og omsorgstjenesten. Eksempel OID’en for det helsefaglige kodeverket ICD-10 er 2.16.578.1.12.4.1.1.7110. Eksempel OID’en for det administrative kodeverket Pristype for medisinsk utstyr og næringsmidler er 2.16.578.1.12.4.1.1.7423. ",
     "url": "/best-practice-material/docs/profilering/codesystem.html#kodeverk-fra-volvenno",
     
     "relUrl": "/docs/profilering/codesystem.html#kodeverk-fra-volvenno"
-  },"31": {
+  },"30": {
     "doc": "Kodeverk",
     "title": "Datatyper for kodede elementer",
     "content": "I FHIR benyttes datatypene CodeableConcept, Coding og code for å angi kodede verdier i dataelementer. Coding-datatypen er den sentrale ressursen for unikt å definere anvendt kode ved hjelp av attributter som system (kodeverk) og versjon. CodeableConcept har en 0..* - relasjon til Coding og gir dermed muligheten for å definere et begrep ved hjelp av koder fra ulike kodeverk, eller eventuelt kun representere begrepet ved hjelp av en tekst-string. Mer om datatypene her: Datatypes - FHIR (hl7.org) . Coding . Mer om datatypen Coding: Coding . { // from Element: extension \"system\" : \"&lt;uri&gt;\", // Identity of the terminology system \"version\" : \"&lt;string&gt;\", // Version of the system - if relevant \"code\" : \"&lt;code&gt;\", // Symbol in syntax defined by the system \"display\" : \"&lt;string&gt;\", // Representation defined by the system \"userSelected\" : &lt;boolean&gt; // If this coding was chosen directly by the user } . system . Identifiserer kodesystemet på volven ved hjelp av OID’en på URN-format. Eksempel urn:oid:2.16.578.1.12.4.1.1.7423 . version . Brukes ikke før vi får versjoner av kodeverk på Volven. code . Selve koden. Eksempel E . display . Visningsnavn. Eksempel Maksimal refusjonspris per enhet . userSelected . Valgfritt. ",
     "url": "/best-practice-material/docs/profilering/codesystem.html#datatyper-for-kodede-elementer",
     
     "relUrl": "/docs/profilering/codesystem.html#datatyper-for-kodede-elementer"
-  },"32": {
+  },"31": {
     "doc": "Kodeverk",
     "title": "Eksempel JSON",
     "content": "{ \"system\" : \"urn:oid:2.16.578.1.12.4.1.1.7110\", // ICD-10 \"code\" : \"J10\", \"display\" : \"Influensa som skyldes identifisert sesongvariabelt influensavirus\" } . { \"system\" : \"urn:oid:2.16.578.1.12.4.1.1.7423\", \"code\" : \"E\", \"display\" : \"Maksimal refusjonspris per enhet\" } . ",
     "url": "/best-practice-material/docs/profilering/codesystem.html#eksempel-json",
     
     "relUrl": "/docs/profilering/codesystem.html#eksempel-json"
-  },"33": {
+  },"32": {
     "doc": "Kodeverk",
     "title": "Binding strength",
     "content": "FHIR standarden har en del anbefalinger for bruk av kodeverk og terminologi definert opp som en del av standarden. Anbefalingene av kodeverk og terminologi kommer på fire nivåer (binding strengths) - required, extensible, preferred og example. For required er det obligatorisk å benytte kodeverk definert av FHIR for å være kompatible med FHIR, mens eksempel-bindinger uten noen form for anbefaling. Merk at for eksempel SNOMED CT-koder aldri vil være mer enn et eksempel i internasjonale FHIR-bruk fordi land uten medlemskap i SNOMED International ikke har rettigheter til å bruke de. Mer om binding strength fra spesifikasjonen her . ",
     "url": "/best-practice-material/docs/profilering/codesystem.html#binding-strength",
     
     "relUrl": "/docs/profilering/codesystem.html#binding-strength"
-  },"34": {
+  },"33": {
     "doc": "Kodeverk",
     "title": "Angivelse av kodeverk med URL",
     "content": "Ulempe med bruk av OID er at FHIR servere ikke kan finne kodeverkene og benytte disse for å validere kodene. Det kan derfor være gode grunner til å definere kodeverkene med FHIR resursene ValueSet og CodeSystem og benytte disse direkte i profilene. Man bruker da en URL for å identifisere ValueSet og CodeSystem. &lt;event&gt; &lt;system value=\"http://ehelse.no/fhir/CodeSystem/vkp-message-event-v05\" /&gt; &lt;code value=\"MedicationDispense\" /&gt; &lt;/event&gt; . \"valueCodeableConcept\":{ \"coding\": [ { \"system\":\"http://ehelse.no/fhir/CodeSystem/vkp-emergency-level-v05\", \"code\":\"V\", \"display\":\"Vanlig (grønn)\" } ] } . ",
     "url": "/best-practice-material/docs/profilering/codesystem.html#angivelse-av-kodeverk-med-url",
     
     "relUrl": "/docs/profilering/codesystem.html#angivelse-av-kodeverk-med-url"
-  },"35": {
+  },"34": {
     "doc": "Kodeverk",
     "title": "Internasjonale terminologier og kodeverk",
     "content": "Flere kodeverk har gitte namespace, se et utvalg på HL7 sine sider. Se også side for informasjon om eksterne terminologier. ",
     "url": "/best-practice-material/docs/profilering/codesystem.html#internasjonale-terminologier-og-kodeverk",
     
     "relUrl": "/docs/profilering/codesystem.html#internasjonale-terminologier-og-kodeverk"
-  },"36": {
+  },"35": {
     "doc": "Kodeverk",
     "title": "Utvalg",
     "content": ". | Using ICD-[X] Codes with FHIR | Using ISO 3166 Country Codes with FHIR | . ",
     "url": "/best-practice-material/docs/profilering/codesystem.html#utvalg",
     
     "relUrl": "/docs/profilering/codesystem.html#utvalg"
-  },"37": {
+  },"36": {
     "doc": "Kodeverk",
     "title": "Eksempler",
     "content": "SNOMED CT = http://snomed.info/sct ISO Country &amp; Regional Codes = urn:iso:std:iso:3166 . ",
     "url": "/best-practice-material/docs/profilering/codesystem.html#eksempler",
     
     "relUrl": "/docs/profilering/codesystem.html#eksempler"
-  },"38": {
+  },"37": {
     "doc": "Kodeverk",
     "title": "Se også",
     "content": ". | NamingSystem | Måleenhet | SNOMED CT | . ",
     "url": "/best-practice-material/docs/profilering/codesystem.html#se-ogs%C3%A5",
     
     "relUrl": "/docs/profilering/codesystem.html#se-også"
-  },"39": {
+  },"38": {
     "doc": "Dokumenter",
     "title": "Mål",
     "content": "Utvikle best practice for FHIR Documents og eventuelle nasjonale profiler/IG. ",
     "url": "/best-practice-material/docs/IG-og-dokumentasjon/documents.html#m%C3%A5l",
     
     "relUrl": "/docs/IG-og-dokumentasjon/documents.html#mål"
-  },"40": {
+  },"39": {
     "doc": "Dokumenter",
     "title": "Kartlegging av bruk",
     "content": "Direktoratet for e-helse har i sin tiltaksplan i Veikart og planer for e-helsestandarder 2018-2022 foreløpig satt tiltaket Utrede bruk av internasjonale standarder for dokumentdeling til 2020. FHIR Documents vil være ett av flere alternativ som skal vurderes. Det er forøvrig ingen kjente anvendelser av FHIR Documents i Norge. Vennligst tips oss eller skriv inn her hvis du vet om noe. ",
     "url": "/best-practice-material/docs/IG-og-dokumentasjon/documents.html#kartlegging-av-bruk",
     
     "relUrl": "/docs/IG-og-dokumentasjon/documents.html#kartlegging-av-bruk"
-  },"41": {
+  },"40": {
     "doc": "Dokumenter",
     "title": "Interessenter",
     "content": ". | Førerrettprosjektet (SMART on FHIR) | AMK-prosjektet / Helse Vest RHF | . ",
     "url": "/best-practice-material/docs/IG-og-dokumentasjon/documents.html#interessenter",
     
     "relUrl": "/docs/IG-og-dokumentasjon/documents.html#interessenter"
-  },"42": {
+  },"41": {
     "doc": "Dokumenter",
     "title": "Dokumenter",
     "content": " ",
     "url": "/best-practice-material/docs/IG-og-dokumentasjon/documents.html",
     
     "relUrl": "/docs/IG-og-dokumentasjon/documents.html"
-  },"43": {
+  },"42": {
     "doc": "Identifikatorsøk i REST operasjoner",
     "title": "REST tjenester og søk etter person",
     "content": " ",
     "url": "/best-practice-material/docs/IG-og-dokumentasjon/fnr-dnr-get-vs-post.html#rest-tjenester-og-s%C3%B8k-etter-person",
     
     "relUrl": "/docs/IG-og-dokumentasjon/fnr-dnr-get-vs-post.html#rest-tjenester-og-søk-etter-person"
-  },"44": {
+  },"43": {
     "doc": "Identifikatorsøk i REST operasjoner",
     "title": "Problemstilling",
     "content": "Når en tjeneste utfører et søk etter en person ved hjelp av unike nasjonale identifikatorer (i norge betyr dette fødselsnummer eller d-nummer), kan dette føre til at sensitiv informasjon havner i logger hos klient eller tjener. Dette skjer fordi søkeparametere ved den vanligste formen for søk ved hjelp av HTTP operasjonen GET, legges med som en del av HTTP header som i mange systemer legges i tekniske logger på systemet . I FHIR sammenheng gjelder dette søk på Reference.identifier eller Person/Patient/RelatedPerson.identifier, i de tilfellene identifikatoren er et fødselsnummer eller d-nummer. For eksempel: . GET [base]/Person?identifier=urn:oid:2.16.578.1.12.4.1.4.1|04021950128 . ",
     "url": "/best-practice-material/docs/IG-og-dokumentasjon/fnr-dnr-get-vs-post.html#problemstilling",
     
     "relUrl": "/docs/IG-og-dokumentasjon/fnr-dnr-get-vs-post.html#problemstilling"
-  },"45": {
+  },"44": {
     "doc": "Identifikatorsøk i REST operasjoner",
     "title": "Løsning",
     "content": "For å unngå at identifikatorer havner i tekniske logger kan klienter benytte POST ved slike søk og tjenere kan stille krav om at POST operasjon benyttes ved søk etter identifikator. Krav i CapabilityStatement . Tjenere som tilbyr søk på person i form av identifikator BØR stille krav om at POST operasjon benyttes ved slike søk, kravene SKAL isåfall nedfelles i tjenesten CapabilityStatement. Implementation Guide text . Kravet om bruk av POST BØR også beskrives i Implementasjonsguiden til tjenesten. Nedenfor er et eksempel på hvordan et slikt krav kan uttykkes i en implementasjonsguide. Eksempel . Get person information based on Identifier . You can search for person information based on the identifier of the person (FNR or DNR). The search interaction on Identifiers SHALL only use the POST operation to prevent the identifier from being recorded in HTTP logs. The search parameters SHALL be provided in the body of the message. POST [base]/Person/_search parameters in HTTP body: identifier=urn:oid:2.16.578.1.12.4.1.4.1|04021950128 . cURL code for this transaction: . curl -X POST -d identifier=urn%3Aoid%3A2.16.578.1.12.4.1.4.1%7C04021950128 [base]/Person/_search . ",
     "url": "/best-practice-material/docs/IG-og-dokumentasjon/fnr-dnr-get-vs-post.html#l%C3%B8sning",
     
     "relUrl": "/docs/IG-og-dokumentasjon/fnr-dnr-get-vs-post.html#løsning"
-  },"46": {
+  },"45": {
     "doc": "Identifikatorsøk i REST operasjoner",
     "title": "Identifikatorsøk i REST operasjoner",
     "content": " ",
     "url": "/best-practice-material/docs/IG-og-dokumentasjon/fnr-dnr-get-vs-post.html",
     
     "relUrl": "/docs/IG-og-dokumentasjon/fnr-dnr-get-vs-post.html"
-  },"47": {
+  },"46": {
     "doc": "Forvaltning av metoden",
     "title": "Forvaltning av metoden",
     "content": "Metode for utvikling av områdeprofiler skal forvaltes og videreutvikles som et samarbeid mellom alle aktører i sektoren og forankres med HL7 Norge og Direktoratet for e-Helse gjennom en åpen prosess og via åpne kanaler slik det slås fast i Prinsipp 11. Vedlikehold og forvaltning av metoden gjennomføres etter metode for utvikling av områdeprofiler. Det betyr at fasene metoden beskriver kan benyttes også i et forvaltningsløp for selve metoden. Ansvarlig forvalter er Direktoratet for e-helse, men hele sektoren må gi innspill til endringer etterhvert som de opparbeider seg erfaringer med bruk av metoden. ",
     "url": "/best-practice-material/docs/no-domain-metode/forvaltning-av-metoden.html",
     
     "relUrl": "/docs/no-domain-metode/forvaltning-av-metoden.html"
-  },"48": {
+  },"47": {
     "doc": "Forvaltning av metoden",
     "title": "Normert versjon og utviklingsversjon",
     "content": "Metoden er normert av Direktoratet for e-helse. Versjonen som er publisert på ehelse.no gjenspeiler den kvalitetssikrede og normative beskrivelsen av metoden. Samtidig vil det eksistere en utviklingsversjon av metoden på HL7 Norges GitHub (dette dokumentet). Den vil bli oppdatert løpende etter innspill fra sektor etter som man får erfaringer med bruk. Ved store forskjeller mellom normert versjon og utviklingsversjon vil endringene fra utviklingsversjonen bli inkludert i den normerte, og en revidert utgave vil bli publisert på ehelse.no. Figur Forvaltning av metoden . ",
     "url": "/best-practice-material/docs/no-domain-metode/forvaltning-av-metoden.html#normert-versjon-og-utviklingsversjon",
     
     "relUrl": "/docs/no-domain-metode/forvaltning-av-metoden.html#normert-versjon-og-utviklingsversjon"
-  },"49": {
+  },"48": {
     "doc": "Personidentifikator",
     "title": "Personidentifikator",
     "content": "Bruk av personidentifikatorer i Identifier. ",
     "url": "/best-practice-material/docs/IG-og-dokumentasjon/identifier-person.html",
     
     "relUrl": "/docs/IG-og-dokumentasjon/identifier-person.html"
-  },"50": {
+  },"49": {
     "doc": "Personidentifikator",
     "title": "Nasjonale identifikatorserier for personer",
     "content": "Kilde . Følgende nasjonale identifikatorserier for personer er tildelt en OID: . | fødselsnummer 2.16.578.1.12.4.1.4.1 (Tildeles av Skatteetaten) | d-nummer 2.16.578.1.12.4.1.4.2 (Tildeles av Skatteetaten) | felles-hjelpenummer 2.16.578.1.12.4.1.4.3 (Tildeles av Norsk helsenett) | hpr-nummer 2.16.578.1.12.4.1.4.4 (Helsepersonellnummer, tildeles av Helsedirektoratet) | duf-nummer 2.16.578.1.12.4.1.4.5 (Tildeles av Utlendingsdirektoratet) | . ",
     "url": "/best-practice-material/docs/IG-og-dokumentasjon/identifier-person.html#nasjonale-identifikatorserier-for-personer",
     
     "relUrl": "/docs/IG-og-dokumentasjon/identifier-person.html#nasjonale-identifikatorserier-for-personer"
-  },"51": {
+  },"50": {
     "doc": "Personidentifikator",
     "title": "Identifier",
     "content": "Kilde . { // from Element: extension \"use\" : \"&lt;code&gt;\", // usual | official | temp | secondary (If known) \"type\" : { CodeableConcept }, // Description of identifier \"system\" : \"&lt;uri&gt;\", // The namespace for the identifier value \"value\" : \"&lt;string&gt;\", // The value that is unique \"period\" : { Period }, // Time period when id is/was valid for use \"assigner\" : { Reference(Organization) } // Organization that issued id (may be just text) } . use . Valgfritt . type . Brukes ikke. Det brukes ikke kodeverk i de tilfellene der man har en OID for selve konseptet, som beskrevet øverst. Er det behov for å bruke et kodeverk, se Kodeverk. system . Navnerom for identifikator-systemet. Dette er en OID og/eller navnerom definert ved hjelp av NamingSystem. Eksempel urn:oid:2.16.578.1.12.4.1.4.1 (fødselsnummer) . value . Selve identifikatoren. Eksempel 131169 00216 . Diskusjon: Skal mellomrom tillates? (Espen) . period . Valgfritt . assigner . Valgfritt. Denne informasjonen er implisitt for Nasjonale identifikatorserier for personer, men kan være aktuelt for lokale hjelpenumre. ",
     "url": "/best-practice-material/docs/IG-og-dokumentasjon/identifier-person.html#identifier",
     
     "relUrl": "/docs/IG-og-dokumentasjon/identifier-person.html#identifier"
-  },"52": {
+  },"51": {
     "doc": "Personidentifikator",
     "title": "Eksempel JSON",
     "content": "{ \"system\" : \"urn:oid:2.16.578.1.12.4.1.4.1\", // fødselsnummer \"value\" : \"13116900216\" } . ",
     "url": "/best-practice-material/docs/IG-og-dokumentasjon/identifier-person.html#eksempel-json",
     
     "relUrl": "/docs/IG-og-dokumentasjon/identifier-person.html#eksempel-json"
-  },"53": {
+  },"52": {
     "doc": "Identifikator i FHIR",
     "title": "Identifikatorer i FHIR",
     "content": "HL7 FHIR skiller strengt mellom forretningsidentifikator som skal være en global unik forretningsidentifikator og en id som er en identifikator på en instans av ressursen i ett system Logiske id og identifikator. Identifier-elementet identfifiserer en ressurs globalt ved bruk av system og value-attributtene. System kan enten inneholde en OID eller en URL som er globalt unik. Overordnet har vi to overordnede use-case - enten finnes det nasjonalt unike idenfikatorer eller så gjør det ikke det. ",
     "url": "/best-practice-material/docs/IG-og-dokumentasjon/identifier.html#identifikatorer-i-fhir",
     
     "relUrl": "/docs/IG-og-dokumentasjon/identifier.html#identifikatorer-i-fhir"
-  },"54": {
+  },"53": {
     "doc": "Identifikator i FHIR",
     "title": "Nasjonalt unike navnerom eksisterer",
     "content": "I mange tilfeller finnes det offisielle nasjonale identifikatorer som vil være preferert å benytte for samhandling. Eksempler på dette er FNR og DNR for pasient, HPR-nummmer for helsepersonell, RESH og Enhetsidentifikator fra Brønnøysundregisterne for organisasjon etc. Da benyttes en OID (som forhåpentligvis snart kan representeres i form av en URL) i system-attributtet med tilhørende verdi i value-attributtet. Eksempel RESH: . &lt;system value=\"urn:oid:2.16.578.1.12.4.1.4.1026\" /&gt; (OID for identifikasjon av RESH) &lt;value value=\"45879\" /&gt; . ",
     "url": "/best-practice-material/docs/IG-og-dokumentasjon/identifier.html#nasjonalt-unike-navnerom-eksisterer",
     
     "relUrl": "/docs/IG-og-dokumentasjon/identifier.html#nasjonalt-unike-navnerom-eksisterer"
-  },"55": {
+  },"54": {
     "doc": "Identifikator i FHIR",
     "title": "Nasjonale identifikatorsystem eksisterer ikke",
     "content": "Dersom nasjonale identifikatorer ikke eksisterer for ressurstypen kan ulike kombinasjoner av system/value benyttes for å sikre global identifikasjon. En mulighet er å benytte globalt unike generelle identifikatorsystem slik som UUID for å generere globalt unike identifikatorer. Et alternativ kan være at lokalt unike identifikatorer benyttes sammen med et globalt unikt navnerom kontrollert av organisasjonen, for å sikre at lokalt unike identifikatorer forblir unike på innenfor det angitte systemet (identifier.system). Bruk av UUID . Ved samhandling mellom aktører og virksomheter kan UUID benyttes som global unik identifikator for identifier.value. I tilfeller hvor UUID benyttes vil system være urn:ietf:rfc:3986. Eksempel: . &lt;system value=\"urn:ietf:rfc:3986\" /&gt; &lt;value value=\"urn:uuid:791ecfdd-7851-4a66-b51a-8b5b484daffb\" /&gt; . Bruk av OID + lokal verdi . Alternativt kan et globalt unikt navnerom (identifier.system med unik OID/URL) kombinert med lokale unik identifikator (identifier.value) benyttes. Tilsammen vil system og value være globalt unik I dette tilfellet er det organisasjonen som står ansvarlig for å benytte et navnerom (identifier.system verdi) de kontrollerer selv og som organisasjonen har registrert globalt. Dette kan gå inn i dagens nasjonale OID-regime, men vi anbefaler bruk av URL som standardrepresentasjon i stedet for dagens numeriske urn:OID-identifikator. Eksempel Appointment: . &lt;system value=\"urn:oid:2.16.578.1.12.4.3.1.4.20.1\" /&gt; (OID for DIPS Sykehuset Østfold) &lt;value value=\"1234567\" /&gt; &lt;system value=\"http://oid.helse-sorost.no/so/dips\" /&gt; (URL for DIPS Sykehuset Østfold) &lt;value value=\"1234567\" /&gt; . ",
     "url": "/best-practice-material/docs/IG-og-dokumentasjon/identifier.html#nasjonale-identifikatorsystem-eksisterer-ikke",
     
     "relUrl": "/docs/IG-og-dokumentasjon/identifier.html#nasjonale-identifikatorsystem-eksisterer-ikke"
-  },"56": {
+  },"55": {
     "doc": "Identifikator i FHIR",
     "title": "Identifikator i FHIR",
     "content": " ",
     "url": "/best-practice-material/docs/IG-og-dokumentasjon/identifier.html",
     
     "relUrl": "/docs/IG-og-dokumentasjon/identifier.html"
-  },"57": {
+  },"56": {
     "doc": "Versjoner av IG",
     "title": "SEMVER for implementasjonsguide",
     "content": "Implementasjonsguider benytter tre nivåer for versjonsnummer MAJOR.MINOR.PATCH . | MAJOR er større endringer som ikke er tilbakekompatibel | MINOR er utvidet funksjonalitet som er tilbakekompatibel | PATCH er mindre tilbakekompatible endringer og retting av småfeil | . ",
     "url": "/best-practice-material/docs/IG-og-dokumentasjon/ig-versioning.html#semver-for-implementasjonsguide",
     
     "relUrl": "/docs/IG-og-dokumentasjon/ig-versioning.html#semver-for-implementasjonsguide"
-  },"58": {
+  },"57": {
     "doc": "Versjoner av IG",
     "title": "Eksempler",
     "content": ". | MAJOR versjoner benyttes til større oppdatering som innebærer at endringen ikke er tilbakekompatibel. Store mengder nye informasjonselementer, funksjonsendringer og nye FHIR versjoner er eksempler på MAJOR | MINOR versjoner skal bare inneholde tilbakekompatible endringer. Eksempler på slike endringer er nytt innhold, funksjonstillegg i grensesnittet eller større endringer i dokumentasjonen av tjenesten | PATCH versjoner inneholder tilbakekompatible endringer men kan også inneholde feilrettinger for å sikre at funksjonaliteten i grensesnittet er i samsvar med dokumenterte kapabiliteter. Eksempler på dette er feil i kodeverksnavn i en profil | Mindre klargjøringer av dokumentasjonen trenger ikke føre til ny PATCH versjon. | . Tilbakekompatible endringer . Begrepet Tilbakekompatible endringer betegner endringer i grensesnittet (API funksjonalitet) eller FHIR datamodell som kan konsumeres av en eksisterende klient uten at klienten gjør endringer på sin implementasjon . | Oppdateringer i dokumentasjonen som klargjør funksjonaliteten i grensesnittet eller forklarer hvordan datamodellen skal tolkes | Det kan legges til API-funksjonalitet til grensesnittet (nye søkeparametere eller operasjoner kan implementeres) da disse er et tilbud og det ikke er et krav om at alle konsumenter skal benyttes ny funksjonalitet | Det kan legges informasjon i eksisterende informasjonselementer i som er nevnt i datamodellen, hvis informasjon blir tilgjengelig i tjenesten og informasjoninnholdet ikke avviker fra datamodellen . | Dette inkluderer også at man legger til nye extensions til eksisterende informasjonselementer i modellen da det ikke er et krav om at klienten faktisk må kjenne til en extension for å lese ressursen | . | Dette inkluderer IKKE å legge til informasjon med krav om obligatorisk støtte i form av kadinalitet 1..x eller must-support | . Ikke tilbakekompatible endringer . Ikke tilbakekompatible endringer betegner endringer i grensesnittets API funksjonalitet eller i FHIR datamodell som ikke er mulig å konsumere med en eksisterende FHIR konform klient . | I kodede informasjonselementer som er obligatoriske eller markert som must-support, kan tjenesten i liten grad gjøre endringer i selve kodeverket uten at dette betraktes som en endring som ødelegger implementasjoner siden eksisterende klienter ikke kan garantere for at de kan benytte, tolke og vise nye koder korrekt | Det kan ikke endres API funksjonalitet på en slik måte at resultatet ikke kan leses av eksisterende klienter (endring i bruk av feilkoder, endring i sikkerhetsmekanismer, endring i søkeparametere og operasjoner) . | bugfix er unntatt så lenge endringen endrer funksjonalitet slik at eksponert løsning er i henhold til dokumentert funksjonalitet | . | Det kan ikke endres i funksjonaliteten til eksisterende operasjoner eller søkeparametere . | bugfix er unntatt så lenge endringen endrer funksjonalitet slik at eksponert løsning er i henhold til dokumentert funksjonalitet | . | Det kan ikke legges til informasjonselementer i modellen som har kardinalitet 1..x eller blir betegnet med must-support . | Dette inkluderer å endre kardinalitet fra 0 til 1..x | . | . Kilde: Guide versioning - INTEROPen Care Connect API / Semantic Versioning 2.0.0 . ",
     "url": "/best-practice-material/docs/IG-og-dokumentasjon/ig-versioning.html#eksempler",
     
     "relUrl": "/docs/IG-og-dokumentasjon/ig-versioning.html#eksempler"
-  },"59": {
+  },"58": {
     "doc": "Versjoner av IG",
     "title": "Versjoner av IG",
     "content": " ",
     "url": "/best-practice-material/docs/IG-og-dokumentasjon/ig-versioning.html",
     
     "relUrl": "/docs/IG-og-dokumentasjon/ig-versioning.html"
-  },"60": {
+  },"59": {
     "doc": "FHIR fagforum",
     "title": "FHIR fagforum",
     "content": "FHIR fagforum er en møteplass for aktører i eller tilknyttet norsk helsesektor. Formålet er å dele erfaringer og bidra til kompetanseheving på HL7 FHIR blant helseaktører, leverandører og offentlige virksomheter som arbeider med samhandling ved hjelp av HL7 FHIR. ",
     "url": "/best-practice-material/docs/FHIR-faglig-forum/",
     
     "relUrl": "/docs/FHIR-faglig-forum/"
-  },"61": {
+  },"60": {
     "doc": "FHIR fagforum",
     "title": "Innnkalling til møtene på mail",
     "content": "Ønsker du å få innkalling til møtene i FHIR fagforum på mail? Meld deg på HL7 Norge sin mailliste og meld deg på info@hl7.no . ",
     "url": "/best-practice-material/docs/FHIR-faglig-forum/#innnkalling-til-m%C3%B8tene-p%C3%A5-mail",
     
     "relUrl": "/docs/FHIR-faglig-forum/#innnkalling-til-møtene-på-mail"
-  },"62": {
+  },"61": {
     "doc": "FHIR fagforum",
     "title": "Møteplan og referater",
     "content": "Møtene arrangeres klokken 1300-1500, teams lenke ligger i agenda. | Dato | Tema | Agenda | Referat | . | 2021-06-02 | FHIR fagforum møte nr 6 | Terminologi on FHIR | Referat | . | 2021-04-21 | FHIR fagforum møte nr 5 | SMART on FHIR | Referat | . | 2021-03-10 | FHIR fagforum møte nr 4 | Behandlingsplan/CarePlan | Referat | . | 2021-01-27 | FHIR fagforum møte nr 3 | Legemidler og medikasjon | Referat | . | 2020-12-16 | FHIR fagforum møte nr 2 | Profilering og publisering | Referat | . | 2020-11-04 | FHIR fagforum møte nr 1 | Konstituerende møte | Referat | . ",
     "url": "/best-practice-material/docs/FHIR-faglig-forum/#m%C3%B8teplan-og-referater",
     
     "relUrl": "/docs/FHIR-faglig-forum/#møteplan-og-referater"
-  },"63": {
+  },"62": {
     "doc": "FHIR fagforum",
     "title": "Statisk møteplan",
     "content": "| Dato | Tidspunkt | Agenda | Referat | . | 2020-11-04 | 1300-1400 | Møte #1 med virtuelt kickoff | Referat møte #1 | . | 2020-12-16 | 1300-1500 | Møte #2 Profilering og publisering | Referat møte #2 | . | 2021-01-27 | 1300-1500 | Møte #3 Legemidler og medikasjon | Referat møte #3 | . | 2021-03-10 | 1300-1500 | Møte #4 Behandlingsplan/CarePlan | Referat møte #4 | . | 2021-04-21 | 1300-1500 | Møte #5 SMART on FHIR | Referat møte #5 | . | 2021-06-02 | 1300-1500 | Møte #6 Terminologi on FHIR | Referat møte #6 | . | 2021-09-01 | 1300-1600 | Møte #7 Infrastruktur, servere, klienter, rammeverk | Referat møte #7 | . | 2021-10-20 | 1300-1500 | Møte #8 Build pipeline for Implementation Guide + bruk av Spark FHIR server | Referat møte #8 | . | 2021-12-01 | 1300-1500 | Møte #9 Prosjektpresentasjoner, Presenter DITT prosjekt! | Referat møte #9 | . | 2022-02-02 | 1300-1500 | Møte #10 Legemidler og medikasjon | Referat møte #10 | . | 2022-03-16 | 1300-1500 | Møte #11 Dødsårsak/Dødsmelding og transparens | Referat møte #11 | . | 2022-05-11 | 1300-1500 | Møte #12 Terminologi on FHIR | Referat møte #12 | . | 2022-08-31 | 1300-1500 | Møte #13 Sikkerhet, tilgangskontroll, logging, AuditEvent (use-case), HelseID og sikkerhetsbillett | Referat møte #13 | . | 2022-10-12 | 1300-1430 | AVLYST |   | . | 2022-11-30 | 1300-1500 | Møte #15 Pasientens prøvesvar, Digital behandling og egenbehandlingsplan, SAFEST | Referat møte #15 | . | 2023-02-08 | 1300-1500 | Møte #16 Nordic projects | Referat møte #16 | . | 2023-03-29 | 1300-1500 | Møte #17 Gravitate health | Referat møte #17 | . | 2023-05-24 | 1300-1500 | Møte #18 Infrastruktur, servere, klienter, rammeverk | referat møte #18 | . | 2023-08-30 | 1300-1500 | Møte #19 FHIR R5 with Grahame Grieve | referat møte #19 | . | 2023-10-18 | 1300-1500 | Møte #20 FHIR capabilities in EPIC and Helseplattformen | referat møte #20 | . | 2023-11-29 | 1300-1500 | Møte #21 FHIR og terminologi | referat møte #21 | . | 2024-02-07 | 1300-1500 | Møte #22 Observation og målinger on FHIR, VKP, Pasientens prøvesvar og HSØ PHGateway |   | . | 2024-xx-xx | 1300-1500 | Møte #23 Tema |   | . ",
     "url": "/best-practice-material/docs/FHIR-faglig-forum/#statisk-m%C3%B8teplan",
     
     "relUrl": "/docs/FHIR-faglig-forum/#statisk-møteplan"
-  },"64": {
+  },"63": {
     "doc": "FHIR fagforum",
     "title": "Mandat for fagforum",
     "content": "Mandat for FHIR fagforum . ",
     "url": "/best-practice-material/docs/FHIR-faglig-forum/#mandat-for-fagforum",
     
     "relUrl": "/docs/FHIR-faglig-forum/#mandat-for-fagforum"
-  },"65": {
+  },"64": {
     "doc": "FHIR fagforum",
     "title": "Samarbeid",
     "content": "Sidene drives i samarbeid mellom Direktoratet for e-helse og HL7 Norge. Spørsmål? Lyst til å bidra? Ta kontakt! . ",
     "url": "/best-practice-material/docs/FHIR-faglig-forum/#samarbeid",
     
     "relUrl": "/docs/FHIR-faglig-forum/#samarbeid"
+  },"65": {
+    "doc": "IG og Dokumentasjon",
+    "title": "IG og Dokumentasjon",
+    "content": "Når man tilpasser FHIR til nasjonale eller lokale forhold må endringene man gjør dokumenteres. Dette er best-practice for å dokumentere tilpasninger av FHIR. Tilpasninger av FHIR dokumenteres vanligvis som en Implmentasjonsguide, se Den gode implementasjonsguide. Det eksisterer også spesifikke retningslinjer for hvordan nasjonale områdeprofiler og nasjonale basisprofiler skal utarbeides og dokumenteres. ",
+    "url": "/best-practice-material/docs/IG-og-dokumentasjon/",
+    
+    "relUrl": "/docs/IG-og-dokumentasjon/"
   },"66": {
     "doc": "Best Practice",
     "title": "Best Practice",
