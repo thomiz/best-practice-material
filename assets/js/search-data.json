@@ -428,7 +428,7 @@
   },"61": {
     "doc": "FHIR fagforum",
     "title": "Møteplan og referater",
-    "content": "Møtene arrangeres klokken 1300-1500, teams lenke ligger i agenda. | Dato | Tema | Agenda | Referat | . | 2021-06-02 | FHIR fagforum møte nr 6 | Terminologi on FHIR | Referat møte nr 1 | . | 2021-04-21 | FHIR fagforum møte nr 5 | SMART on FHIR | Referat møte nr 2 | . | 2021-03-10 | FHIR fagforum møte nr 4 | Behandlingsplan/CarePlan | Referat møte nr 3 | . | 2021-01-27 | FHIR fagforum møte nr 3 | Legemidler og medikasjon | Referat møte nr 4 | . | 2020-12-16 | FHIR fagforum møte nr 2 | Profilering og publisering | Referat møte nr 5 | . | 2020-11-04 | FHIR fagforum møte nr 1 | Konstituerende møte | Referat møte nr 6 | . ",
+    "content": "Møtene arrangeres klokken 1300-1500, teams lenke ligger i agenda. | Dato | Tema | Agenda | Referat | . | 2021-06-02 | FHIR fagforum møte nr 6 | Terminologi on FHIR | Referat møte nr | . | 2021-04-21 | FHIR fagforum møte nr 5 | SMART on FHIR | Referat møte nr | . | 2021-03-10 | FHIR fagforum møte nr 4 | Behandlingsplan/CarePlan | Referat møte nr | . | 2021-01-27 | FHIR fagforum møte nr 3 | Legemidler og medikasjon | Referat møte nr | . | 2020-12-16 | FHIR fagforum møte nr 2 | Profilering og publisering | Referat møte nr | . | 2020-11-04 | FHIR fagforum møte nr 1 | Konstituerende møte | Referat møte nr | . ",
     "url": "/best-practice-material/docs/FHIR-faglig-forum/#m%C3%B8teplan-og-referater",
     
     "relUrl": "/docs/FHIR-faglig-forum/#møteplan-og-referater"
